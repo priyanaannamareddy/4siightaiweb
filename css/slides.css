@@ -1,0 +1,762 @@
+/* Slide Animation Styles with GSAP Enhancements */
+.slide-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: var(--gradient-dark);
+}
+
+/* Animated background for slide section to match featured products */
+.slide-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 20% 50%, rgba(0, 229, 255, 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 80% 50%, rgba(0, 123, 255, 0.06) 0%, transparent 50%);
+    animation: sectionPulse 15s ease-in-out infinite;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: translateY(100%) scale(0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background: inherit;
+}
+
+.slide.section-dark {
+    background: var(--gradient-dark);
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+}
+
+.slide.section-dark .slide-content {
+    position: relative;
+    z-index: 1;
+}
+
+.slide.active {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+.slide-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--white);
+    transform: translateY(50px) scale(0.9);
+    opacity: 0;
+}
+
+.slide-heading {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+}
+
+.slide-heading::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background: var(--gradient-primary);
+    animation: headingUnderline 2s ease-out 1.5s forwards;
+}
+
+@keyframes headingUnderline {
+    to {
+        width: 200px;
+    }
+}
+
+.slide-text {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    background: linear-gradient(90deg, var(--white) 0%, rgba(255, 255, 255, 0.8) 50%, var(--white) 100%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.slide-nav {
+    position: fixed;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.slide-nav button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid var(--white);
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform: scale(1);
+    position: relative;
+}
+
+.slide-nav button::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+}
+
+.slide-nav button:hover {
+    transform: scale(1.3);
+    border-color: var(--secondary-cyan);
+}
+
+.slide-nav button:hover::before {
+    border-color: rgba(0, 229, 255, 0.3);
+    transform: scale(1.2);
+}
+
+.slide-nav button.active {
+    background: var(--secondary-cyan);
+    border-color: var(--secondary-cyan);
+    transform: scale(1.4);
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.6);
+}
+
+.slide-nav button.active::before {
+    border-color: rgba(0, 229, 255, 0.5);
+    transform: scale(1.3);
+    animation: navPulse 2s ease-in-out infinite;
+}
+
+@keyframes navPulse {
+    0%, 100% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+/* AI Background Elements for Slides */
+.slide-ai-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+/* AI Background Video */
+.ai-bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    opacity: 0.15;
+    filter: brightness(0.8) contrast(1.2) saturate(1.5);
+    mix-blend-mode: screen;
+    animation: aiVideoPulse 8s ease-in-out infinite;
+}
+
+
+
+@keyframes aiVideoPulse {
+    0%, 100% {
+        opacity: 0.15;
+        filter: blur(1px) brightness(0.8) contrast(1.2);
+    }
+    50% {
+        opacity: 0.25;
+        filter: blur(0.8px) brightness(0.9) contrast(1.4);
+    }
+}
+
+@keyframes sectionPulse {
+    0%, 100% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes aiBgFloat {
+    0% {
+        transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+    12.5% {
+        transform: translate(30px, -25px) rotate(3deg) scale(1.08);
+    }
+    25% {
+        transform: translate(60px, -40px) rotate(6deg) scale(1.12);
+    }
+    37.5% {
+        transform: translate(40px, -10px) rotate(4deg) scale(1.06);
+    }
+    50% {
+        transform: translate(-20px, 30px) rotate(-2deg) scale(0.92);
+    }
+    62.5% {
+        transform: translate(-40px, 50px) rotate(-4deg) scale(0.88);
+    }
+    75% {
+        transform: translate(25px, 35px) rotate(5deg) scale(1.04);
+    }
+    87.5% {
+        transform: translate(45px, 15px) rotate(7deg) scale(1.1);
+    }
+    100% {
+        transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+}
+
+.slide-ai-element {
+    position: absolute;
+    opacity: 0.15;
+    transform: scale(0.8);
+    transition: all 0.6s ease;
+}
+
+.ai-element-0 {
+    width: 8px;
+    height: 8px;
+    background: radial-gradient(circle, rgba(0, 229, 255, 0.9) 0%, rgba(0, 123, 255, 0.5) 50%, transparent 100%);
+    border-radius: 50%;
+    animation: aiElementPulse 4s ease-in-out infinite;
+    box-shadow: 0 0 10px rgba(0, 229, 255, 0.3);
+}
+
+.ai-element-1 {
+    width: 4px;
+    height: 25px;
+    background: linear-gradient(to bottom, rgba(0, 229, 255, 0.7) 0%, rgba(0, 123, 255, 0.4) 50%, transparent 100%);
+    border-radius: 2px;
+    animation: aiElementFlow 6s linear infinite;
+    box-shadow: 0 0 8px rgba(0, 229, 255, 0.2);
+}
+
+.ai-element-2 {
+    width: 20px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent 0%, rgba(0, 229, 255, 0.5) 50%, transparent 100%);
+    animation: aiElementConnect 8s ease-in-out infinite;
+    transform-origin: left center;
+    box-shadow: 0 0 6px rgba(0, 229, 255, 0.3);
+}
+
+.ai-element-3 {
+    width: 12px;
+    height: 12px;
+    border: 2px solid rgba(0, 229, 255, 0.4);
+    border-radius: 4px;
+    animation: aiElementCircuit 12s ease-in-out infinite;
+    background: rgba(0, 229, 255, 0.1);
+}
+
+.ai-element-4 {
+    width: 6px;
+    height: 6px;
+    background: radial-gradient(circle, rgba(0, 123, 255, 0.6) 0%, rgba(0, 229, 255, 0.3) 50%, transparent 100%);
+    border-radius: 50%;
+    animation: aiElementWeb 10s ease-in-out infinite;
+    box-shadow: 0 0 12px rgba(0, 123, 255, 0.4);
+}
+
+.ai-element-5 {
+    width: 2px;
+    height: 20px;
+    background: linear-gradient(to bottom, rgba(0, 255, 0, 0.8) 0%, rgba(0, 229, 255, 0.4) 50%, transparent 100%);
+    animation: matrixRain 3s linear infinite;
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    color: rgba(0, 255, 0, 0.8);
+    text-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+}
+
+.ai-element-6 {
+    width: 10px;
+    height: 10px;
+    background: radial-gradient(circle, rgba(255, 0, 255, 0.7) 0%, rgba(0, 229, 255, 0.4) 50%, transparent 100%);
+    border-radius: 50%;
+    animation: quantumPulse 8s ease-in-out infinite;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.6);
+}
+
+.ai-element-7 {
+    width: 30px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 0, 0.6) 50%, transparent 100%);
+    animation: synapseConnect 5s ease-in-out infinite;
+    transform-origin: center;
+    box-shadow: 0 0 8px rgba(255, 255, 0, 0.4);
+}
+
+.ai-element-8 {
+    width: 100px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, rgba(0, 229, 255, 0.7) 20%, rgba(0, 123, 255, 0.5) 80%, transparent 100%);
+    animation: dataStream 4s linear infinite;
+    box-shadow: 0 0 10px rgba(0, 229, 255, 0.3);
+}
+
+.ai-element-9 {
+    width: 14px;
+    height: 14px;
+    border: 2px solid rgba(255, 165, 0, 0.5);
+    border-radius: 50%;
+    background: rgba(255, 165, 0, 0.1);
+    animation: aiLearning 6s ease-in-out infinite;
+}
+
+.ai-element-10 {
+    width: 8px;
+    height: 16px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(0, 229, 255, 0.4) 100%);
+    animation: binaryFlow 4s ease-in-out infinite;
+    font-family: 'Courier New', monospace;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes aiElementPulse {
+    0%, 100% {
+        transform: scale(0.8);
+        opacity: 0.2;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.6;
+    }
+}
+
+@keyframes aiElementFlow {
+    0% {
+        transform: translateY(0) scaleY(1);
+        opacity: 0.2;
+    }
+    50% {
+        transform: translateY(-10px) scaleY(1.5);
+        opacity: 0.6;
+    }
+    100% {
+        transform: translateY(-20px) scaleY(1);
+        opacity: 0.2;
+    }
+}
+
+@keyframes aiElementConnect {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+    50% {
+        width: 30px;
+        opacity: 0.4;
+    }
+    100% {
+        width: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes aiElementCircuit {
+    0%, 100% {
+        transform: rotate(0deg) scale(1);
+        opacity: 0.2;
+    }
+    25% {
+        transform: rotate(90deg) scale(1.1);
+        opacity: 0.4;
+    }
+    50% {
+        transform: rotate(180deg) scale(0.9);
+        opacity: 0.3;
+    }
+    75% {
+        transform: rotate(270deg) scale(1.05);
+        opacity: 0.5;
+    }
+}
+
+@keyframes aiElementWeb {
+    0%, 100% {
+        transform: scale(0.8) rotate(0deg);
+        opacity: 0.3;
+    }
+    25% {
+        transform: scale(1.1) rotate(90deg);
+        opacity: 0.6;
+    }
+    50% {
+        transform: scale(0.9) rotate(180deg);
+        opacity: 0.4;
+    }
+    75% {
+        transform: scale(1.2) rotate(270deg);
+        opacity: 0.7;
+    }
+}
+
+/* Advanced AI Effects - Matrix Rain */
+@keyframes matrixRain {
+    0% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
+
+@keyframes clipRectFix {
+    0% {
+        transform: translateZ(1px);
+        clip-path: inset(0 0 0 0);
+    }
+    50% {
+        transform: translateZ(1px);
+        clip-path: inset(0 50% 0 0);
+    }
+    100% {
+        transform: translateZ(1px);
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+/* Quantum Particle Effects */
+@keyframes quantumPulse {
+    0%, 100% {
+        transform: scale(0.8) rotate(0deg);
+        opacity: 0.4;
+        filter: blur(0px);
+    }
+    25% {
+        transform: scale(1.2) rotate(90deg);
+        opacity: 0.8;
+        filter: blur(1px);
+    }
+    50% {
+        transform: scale(0.9) rotate(180deg);
+        opacity: 0.6;
+        filter: blur(0.5px);
+    }
+    75% {
+        transform: scale(1.1) rotate(270deg);
+        opacity: 0.9;
+        filter: blur(0.8px);
+    }
+}
+
+/* Neural Synapse Connections */
+@keyframes synapseConnect {
+    0% {
+        width: 0;
+        opacity: 0;
+        transform: scaleX(0);
+    }
+    50% {
+        width: 40px;
+        opacity: 0.8;
+        transform: scaleX(1);
+    }
+    100% {
+        width: 0;
+        opacity: 0;
+        transform: scaleX(0);
+    }
+}
+
+/* Data Stream Flow */
+@keyframes dataStream {
+    0% {
+        transform: translateX(-100%) translateY(0);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100vw) translateY(0);
+        opacity: 0;
+    }
+}
+
+/* AI Learning Pulse */
+@keyframes aiLearning {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.6;
+        box-shadow: 0 0 10px rgba(0, 229, 255, 0.3);
+    }
+    50% {
+        transform: scale(1.3);
+        opacity: 1;
+        box-shadow: 0 0 30px rgba(0, 229, 255, 0.8);
+    }
+}
+
+/* Binary Code Effect */
+@keyframes binaryFlow {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+}
+
+/* Slide Popup Animations */
+@keyframes slidePopup {
+    0% {
+        transform: scale(0.3) translateY(100px) rotateX(90deg);
+        opacity: 0;
+        filter: blur(10px);
+    }
+    50% {
+        transform: scale(1.05) translateY(-10px) rotateX(0deg);
+        opacity: 0.8;
+        filter: blur(2px);
+    }
+    100% {
+        transform: scale(1) translateY(0) rotateX(0deg);
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
+
+@keyframes slidePopupBounce {
+    0% {
+        transform: scale(0.3) translateY(100px);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.1) translateY(-10px);
+        opacity: 1;
+    }
+    80% {
+        transform: scale(0.95) translateY(2px);
+    }
+    100% {
+        transform: scale(1) translateY(0);
+    }
+}
+
+@keyframes slidePopupElastic {
+    0% {
+        transform: scale(0.1) translateY(200px) rotate(-180deg);
+        opacity: 0;
+    }
+    40% {
+        transform: scale(1.2) translateY(-20px) rotate(10deg);
+        opacity: 0.8;
+    }
+    70% {
+        transform: scale(0.9) translateY(5px) rotate(-5deg);
+    }
+    100% {
+        transform: scale(1) translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes slidePopupFlip {
+    0% {
+        transform: perspective(1000px) rotateY(90deg) scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        transform: perspective(1000px) rotateY(-10deg) scale(1.1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: perspective(1000px) rotateY(0deg) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slidePopupGlow {
+    0% {
+        transform: scale(0.5) translateY(50px);
+        opacity: 0;
+        box-shadow: 0 0 0 rgba(0, 229, 255, 0);
+    }
+    50% {
+        transform: scale(1.05) translateY(-5px);
+        opacity: 0.9;
+        box-shadow: 0 0 30px rgba(0, 229, 255, 0.5);
+    }
+    100% {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+        box-shadow: 0 0 20px rgba(0, 229, 255, 0.3);
+    }
+}
+
+/* Popup Animation Classes */
+.slide-popup {
+    animation: slidePopup 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+.slide-popup-bounce {
+    animation: slidePopupBounce 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+.slide-popup-elastic {
+    animation: slidePopupElastic 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+.slide-popup-flip {
+    animation: slidePopupFlip 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+.slide-popup-glow {
+    animation: slidePopupGlow 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+/* Staggered popup animations */
+.slide-popup-delay-1 {
+    animation-delay: 0.2s;
+}
+
+.slide-popup-delay-2 {
+    animation-delay: 0.4s;
+}
+
+.slide-popup-delay-3 {
+    animation-delay: 0.6s;
+}
+
+/* Enhanced slide transitions */
+.slide-transition-enter {
+    animation: slideEnter 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.slide-transition-exit {
+    animation: slideExit 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+@keyframes slideEnter {
+    0% {
+        opacity: 0;
+        transform: translateY(50px) scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes slideExit {
+    0% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-50px) scale(0.9);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .slide-heading {
+        font-size: 2.5rem;
+    }
+
+    .slide-text {
+        font-size: 1.2rem;
+    }
+
+    .slide-nav {
+        right: 1rem;
+    }
+
+    .slide-nav button {
+        width: 10px;
+        height: 10px;
+    }
+
+    .slide-ai-element {
+        transform: scale(0.6);
+    }
+}
+
+@media (max-width: 480px) {
+    .slide-heading {
+        font-size: 2rem;
+    }
+
+    .slide-text {
+        font-size: 1rem;
+    }
+
+    .slide-nav {
+        right: 0.5rem;
+        gap: 0.5rem;
+    }
+
+    .slide-ai-background {
+        opacity: 0.5;
+    }
+}

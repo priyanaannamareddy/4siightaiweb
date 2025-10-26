@@ -1,0 +1,117 @@
+{
+  "nav": {
+    "home": "首页",
+    "about": "关于我们",
+    "products": "产品",
+    "services": "服务",
+    "contact": "联系我们"
+  },
+  "hero": {
+    "tagline": "赋能企业利用人工智能的力量",
+    "heading": "欢迎来到 4sight AI",
+    "text": "企业技术未来的起点",
+    "exploreProducts": "探索产品",
+    "contactSales": "联系销售"
+  },
+  "slides": {
+    "aiSolutions": {
+      "heading": "尖端人工智能解决方案",
+      "text": "使用最先进的AI和机器学习技术改造您的业务。"
+    },
+    "enterpriseAutomation": {
+      "heading": "企业自动化",
+      "text": "使用我们的智能自动化解决方案简化运营并提高生产力。"
+    },
+    "innovation": {
+      "heading": "推动创新",
+      "text": "使用我们前瞻性的人工智能实施和解决方案保持领先地位。"
+    }
+  },
+  "about": {
+    "heading": "关于 4sight AI",
+    "text": "企业智能未来的开拓者",
+    "mission": {
+      "heading": "我们的使命",
+      "text": "我们是一家总部位于班加罗尔的AI创新公司，致力于通过尖端的生成式AI解决方案改造企业。我们的重点涵盖多个行业，包括技术、医疗保健、教育和公共服务。"
+    },
+    "vision": {
+      "heading": "我们的愿景",
+      "text": "在一个人工智能的实用性日益不可否认的世界中，我们设想AI无缝整合到所有企业运营中，推动前所未有的效率和创新。"
+    },
+    "approach": {
+      "heading": "我们的方法",
+      "text": "我们从全面审计开始识别AI机会，然后引导企业通过战略转型阶段，最终实现全面自动化和AGI整合。"
+    }
+  },
+  "products": {
+    "heading": "特色产品",
+    "text": "为您的行业量身定制的变革性AI解决方案",
+    "aiEnvelop": {
+      "heading": "AI Envelop",
+      "text": "AI Envelop是我们旗舰的企业AI基础设施解决方案，旨在无缝地围绕您现有的系统和流程。"
+    },
+    "nutritionCopilot": {
+      "heading": "Nutrition Co-Pilot",
+      "text": "AI驱动的营养指导系统，为健康企业提供个性化的饮食建议和健康洞察。"
+    },
+    "newsAI": {
+      "heading": "News AI",
+      "text": "智能新闻聚合和分析平台，实时策划、总结和提供个性化的新闻洞察。"
+    },
+    "viewAll": "查看所有产品"
+  },
+  "services": {
+    "heading": "我们的服务",
+    "text": "端到端生成式AI解决方案，实现企业转型",
+    "genAIAdvisory": {
+      "heading": "GenAI咨询",
+      "text": "关于将生成式AI整合到您的业务运营中的战略指导，识别高影响用例并创建可操作路线图。"
+    },
+    "projectScoping": {
+      "heading": "项目范围和蓝图",
+      "text": "GenAI实施的详细项目规划和架构设计，确保与业务目标和技术可行性保持一致。"
+    },
+    "buildingPOC": {
+      "heading": "构建GenAI POC",
+      "text": "快速开发概念验证解决方案，在大规模实施前验证AI用例并展示价值。"
+    },
+    "genAIConsulting": {
+      "heading": "GenAI咨询",
+      "text": "全面的咨询服务，涵盖GenAI采用的所有方面，从战略到实施和持续优化。"
+    }
+  },
+  "stats": {
+    "heading": "我们的影响",
+    "text": "在各行业提供可衡量的结果",
+    "industries": "行业",
+    "deployments": "部署",
+    "inWorks": "进行中",
+    "inBlueprinting": "蓝图中",
+    "inDiscussions": "讨论中",
+    "researchHours": "研究小时",
+    "productivityIncrease": "AI生产力提升 (%)"
+  },
+  "visionTeaser": {
+    "heading": "未来就在现在",
+    "quote": "在一个人工智能的实用性日益不可否认的世界中，我们看到一个未来，每个企业运营都通过智能自动化得到增强，AGI无缝整合人类专业知识，释放前所未有的创新和效率。",
+    "text": "在4sight AI，我们不仅仅在构建工具——我们正在架构明天的智能企业。",
+    "exploreVision": "探索我们的愿景"
+  },
+  "cta": {
+    "heading": "让我们一起构建未来",
+    "text": "准备好使用尖端的AI解决方案改造您的企业了吗？我们的专家团队随时为您提供每一步指导。",
+    "getInTouch": "取得联系",
+    "exploreServices": "探索服务"
+  },
+  "footer": {
+    "heading": "4sight AI",
+    "text": "赋能企业利用人工智能的力量",
+    "quickLinks": "快速链接",
+    "products": "产品",
+    "legal": "法律",
+    "terms": "条款和条件",
+    "privacy": "隐私政策",
+    "copyright": "© 2025 4sight AI. 保留所有权利。| 班加罗尔，印度"
+  },
+  "floatingContact": "联系我们"
+}

@@ -1,0 +1,117 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "products": "Produits",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "hero": {
+    "tagline": "Permettre aux entreprises de tirer parti de la puissance de l'IA",
+    "heading": "Bienvenue chez 4sight AI",
+    "text": "Là où commence l'avenir de la technologie d'entreprise",
+    "exploreProducts": "Explorer les Produits",
+    "contactSales": "Contacter les Ventes"
+  },
+  "slides": {
+    "aiSolutions": {
+      "heading": "Solutions IA de Pointe",
+      "text": "Transformez votre entreprise avec des technologies d'intelligence artificielle et d'apprentissage automatique de pointe."
+    },
+    "enterpriseAutomation": {
+      "heading": "Automatisation d'Entreprise",
+      "text": "Rationalisez vos opérations et augmentez la productivité avec nos solutions d'automatisation intelligente."
+    },
+    "innovation": {
+      "heading": "Piloter l'Innovation",
+      "text": "Restez en tête avec nos implémentations et solutions IA avant-gardistes."
+    }
+  },
+  "about": {
+    "heading": "À Propos de 4sight AI",
+    "text": "Pionniers de l'avenir de l'intelligence d'entreprise",
+    "mission": {
+      "heading": "Notre Mission",
+      "text": "Nous sommes une entreprise d'innovation IA basée à Bangalore dédiée à transformer les entreprises grâce à des solutions d'IA Générative de pointe. Notre focus s'étend sur plusieurs industries incluant la technologie, la santé, l'éducation et les services publics."
+    },
+    "vision": {
+      "heading": "Notre Vision",
+      "text": "Dans un monde où l'utilité de l'Intelligence Artificielle est de plus en plus indiscutable, nous imaginons une intégration transparente de l'IA dans toutes les opérations d'entreprise, stimulant une efficacité et une innovation sans précédent."
+    },
+    "approach": {
+      "heading": "Notre Approche",
+      "text": "Nous commençons par des audits complets pour identifier les opportunités IA, puis guidons les entreprises à travers des phases de transition stratégique, aboutissant à une automatisation à grande échelle et une intégration AGI."
+    }
+  },
+  "products": {
+    "heading": "Produits Phares",
+    "text": "Solutions IA transformatrices adaptées à votre industrie",
+    "aiEnvelop": {
+      "heading": "AI Envelop",
+      "text": "AI Envelop est notre solution phare d'infrastructure IA d'entreprise conçue pour s'envelopper parfaitement autour de vos systèmes et processus existants."
+    },
+    "nutritionCopilot": {
+      "heading": "Nutrition Co-Pilot",
+      "text": "Système de guidance nutritionnelle alimenté par IA qui fournit des recommandations diététiques personnalisées et des insights santé pour les entreprises de bien-être."
+    },
+    "newsAI": {
+      "heading": "News AI",
+      "text": "Plateforme intelligente d'agrégation et d'analyse de nouvelles qui organise, résume et livre des insights nouvelles personnalisés en temps réel."
+    },
+    "viewAll": "Voir Tous les Produits"
+  },
+  "services": {
+    "heading": "Nos Services",
+    "text": "Solutions IA Générative de bout en bout pour la transformation d'entreprise",
+    "genAIAdvisory": {
+      "heading": "Conseil GenAI",
+      "text": "Orientation stratégique sur l'intégration de l'IA Générative dans vos opérations commerciales, identifiant les cas d'usage à fort impact et créant des feuilles de route actionnables."
+    },
+    "projectScoping": {
+      "heading": "Portée du Projet et Plan",
+      "text": "Planification détaillée de projet et conception d'architecture pour les implémentations GenAI, assurant l'alignement avec les objectifs commerciaux et la faisabilité technique."
+    },
+    "buildingPOC": {
+      "heading": "Construction POC GenAI",
+      "text": "Développement rapide de solutions de preuve de concept pour valider les cas d'usage IA et démontrer la valeur avant l'implémentation à grande échelle."
+    },
+    "genAIConsulting": {
+      "heading": "Consulting GenAI",
+      "text": "Services de consulting complets couvrant tous les aspects de l'adoption GenAI, de la stratégie à l'implémentation et l'optimisation continue."
+    }
+  },
+  "stats": {
+    "heading": "Notre Impact",
+    "text": "Livrer des résultats mesurables à travers les industries",
+    "industries": "Industries",
+    "deployments": "Déploiements",
+    "inWorks": "En Cours",
+    "inBlueprinting": "En Planification",
+    "inDiscussions": "En Discussions",
+    "researchHours": "Heures de Recherche",
+    "productivityIncrease": "Augmentation de Productivité IA (%)"
+  },
+  "visionTeaser": {
+    "heading": "L'Avenir Est Maintenant",
+    "quote": "Dans un monde où l'utilité de l'Intelligence Artificielle est de plus en plus indiscutable, nous voyons un avenir où chaque opération d'entreprise est améliorée par l'automatisation intelligente, où l'AGI s'intègre parfaitement avec l'expertise humaine pour débloquer l'innovation et l'efficacité sans précédent.",
+    "text": "Chez 4sight AI, nous ne construisons pas seulement des outils—nous architecturons l'entreprise intelligente de demain.",
+    "exploreVision": "Explorer Notre Vision"
+  },
+  "cta": {
+    "heading": "Construisons l'Avenir Ensemble",
+    "text": "Prêt à transformer votre entreprise avec des solutions IA de pointe ? Notre équipe d'experts est là pour vous guider à chaque étape du chemin.",
+    "getInTouch": "Entrer en Contact",
+    "exploreServices": "Explorer les Services"
+  },
+  "footer": {
+    "heading": "4sight AI",
+    "text": "Permettre aux entreprises de tirer parti de la puissance de l'IA",
+    "quickLinks": "Liens Rapides",
+    "products": "Produits",
+    "legal": "Légal",
+    "terms": "Termes et Conditions",
+    "privacy": "Politique de Confidentialité",
+    "copyright": "© 2025 4sight AI. Tous droits réservés. | Bangalore, India"
+  },
+  "floatingContact": "Nous Contacter"
+}

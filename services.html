@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="4sight AI Services - GenAI Advisory, Project Scoping, POC Development, and Consulting Services for Enterprise AI Transformation">
+    <meta name="keywords" content="GenAI Services, AI Consulting, AI Advisory, POC Development, AI Blueprint">
+    <meta name="author" content="4sight AI">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Our Services - 4sight AI">
+    <meta property="og:description" content="Comprehensive Generative AI services from strategy to implementation">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://4sightai.com/services">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+
+    <title>Our Services - 4sight AI</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cursor.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">4sight AI</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="min-height: 60vh;">
+        <div class="container">
+            <div style="text-align: center; max-width: 900px; margin: 0 auto;">
+                <h1>Our Services</h1>
+                <p class="subheadline" style="font-size: 1.3rem; color: rgba(255, 255, 255, 0.9); margin-top: var(--spacing-md);">
+                    End-to-end Generative AI solutions guiding your enterprise from strategy to implementation
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>OUR SERVICES</h2>
+                <p>Comprehensive GenAI expertise at every stage of your transformation journey</p>
+            </div>
+            <div style="max-width: 900px; margin: 0 auto var(--spacing-lg); text-align: center;">
+                <p style="font-size: 1.1rem; line-height: 1.8; color: var(--gray);">
+                    At 4sight AI, we offer a complete suite of Generative AI services designed to support enterprises at every stage
+                    of their AI transformation journey. Whether you're just beginning to explore AI possibilities or ready to scale
+                    existing implementations, our expert team provides the guidance, expertise, and execution capabilities you need.
+                </p>
+            </div>
+
+            <!-- Service 1: GenAI Advisory -->
+            <div class="card" id="advisory" style="margin-bottom: var(--spacing-xl);">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-lg); align-items: center;">
+                    <div class="card-image" style="height: 400px;">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80"
+                             alt="GenAI Advisory Services"
+                             loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <div style="display: inline-block; background: var(--gradient-primary); color: white; padding: 0.5rem 1.5rem; border-radius: 20px; font-weight: 600; margin-bottom: var(--spacing-sm); font-size: 0.9rem;">
+                            SERVICE 1
+                        </div>
+                        <h3 style="font-size: 2rem; margin-bottom: var(--spacing-md);">
+                            <span style="font-size: 2.5rem; margin-right: 0.5rem;">💡</span>
+                            GenAI Advisory
+                        </h3>
+                        <p style="font-size: 1.05rem; line-height: 1.8;">
+                            Our GenAI Advisory service provides strategic guidance to help you navigate the complex landscape of Generative AI.
+                            We work closely with your leadership team to identify high-impact use cases, assess organizational readiness, and
+                            develop a comprehensive AI strategy aligned with your business objectives.
+                        </p>
+                        <h4 style="margin-top: var(--spacing-md); margin-bottom: var(--spacing-sm); color: var(--primary-navy);">
+                            What We Deliver:
+                        </h4>
+                        <ul style="padding-left: 1.5rem; color: var(--gray); line-height: 1.8;">
+                            <li><strong>AI Opportunity Assessment:</strong> Comprehensive analysis of your operations to identify where AI can deliver maximum value</li>
+                            <li><strong>Strategic Roadmap:</strong> Phased implementation plan with clear milestones and success metrics</li>
+                            <li><strong>Use Case Prioritization:</strong> Data-driven framework for selecting and sequencing AI initiatives</li>
+                            <li><strong>ROI Projections:</strong> Detailed cost-benefit analysis for proposed AI investments</li>
+                            <li><strong>Technology Stack Recommendations:</strong> Guidance on selecting the right AI tools and platforms</li>
+                            <li><strong>Change Management Strategy:</strong> Plans for organizational adoption and skill development</li>
+                        </ul>
+                        <button class="btn btn-primary" style="margin-top: var(--spacing-md);" onclick="openModal('modal-advisory')">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 2: GenAI Project Scoping & Blueprint -->
+            <div class="card" id="scoping" style="margin-bottom: var(--spacing-xl);">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-lg); align-items: center;">
+                    <div class="card-content" style="order: 1;">
+                        <div style="display: inline-block; background: var(--gradient-primary); color: white; padding: 0.5rem 1.5rem; border-radius: 20px; font-weight: 600; margin-bottom: var(--spacing-sm); font-size: 0.9rem;">
+                            SERVICE 2
+                        </div>
+                        <h3 style="font-size: 2rem; margin-bottom: var(--spacing-md);">
+                            <span style="font-size: 2.5rem; margin-right: 0.5rem;">📐</span>
+                            GenAI Project Scoping & Blueprint
+                        </h3>
+                        <p style="font-size: 1.05rem; line-height: 1.8;">
+                            Once strategic direction is established, our Project Scoping & Blueprint service translates vision into detailed
+                            execution plans. We create comprehensive technical architectures, define project requirements, establish timelines,
+                            and ensure all stakeholders are aligned before development begins.
+                        </p>
+                        <h4 style="margin-top: var(--spacing-md); margin-bottom: var(--spacing-sm); color: var(--primary-navy);">
+                            What We Deliver:
+                        </h4>
+                        <ul style="padding-left: 1.5rem; color: var(--gray); line-height: 1.8;">
+                            <li><strong>Technical Architecture:</strong> Detailed system design including data flows, integrations, and infrastructure</li>
+                            <li><strong>Requirements Documentation:</strong> Comprehensive functional and non-functional requirements</li>
+                            <li><strong>Data Strategy:</strong> Plans for data collection, preparation, governance, and security</li>
+                            <li><strong>Project Timeline:</strong> Realistic schedules with key milestones and dependencies</li>
+                            <li><strong>Resource Planning:</strong> Team composition, skill requirements, and capacity planning</li>
+                            <li><strong>Risk Assessment:</strong> Identification of potential challenges with mitigation strategies</li>
+                        </ul>
+                        <button class="btn btn-primary" style="margin-top: var(--spacing-md);" onclick="openModal('modal-scoping')">
+                            Learn More
+                        </button>
+                    </div>
+                    <div class="card-image" style="height: 400px; order: 2;">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80"
+                             alt="Project Scoping and Blueprint"
+                             loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 3: Building GenAI POC -->
+            <div class="card" id="poc" style="margin-bottom: var(--spacing-xl);">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-lg); align-items: center;">
+                    <div class="card-image" style="height: 400px;">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80"
+                             alt="Building GenAI POC"
+                             loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <div style="display: inline-block; background: var(--gradient-primary); color: white; padding: 0.5rem 1.5rem; border-radius: 20px; font-weight: 600; margin-bottom: var(--spacing-sm); font-size: 0.9rem;">
+                            SERVICE 3
+                        </div>
+                        <h3 style="font-size: 2rem; margin-bottom: var(--spacing-md);">
+                            <span style="font-size: 2.5rem; margin-right: 0.5rem;">🚀</span>
+                            Building GenAI POC
+                        </h3>
+                        <p style="font-size: 1.05rem; line-height: 1.8;">
+                            Our Proof of Concept (POC) development service provides rapid, focused implementations that validate AI use cases
+                            before full-scale investment. We build working prototypes that demonstrate value, test assumptions, and provide
+                            concrete evidence of AI's potential impact on your operations.
+                        </p>
+                        <h4 style="margin-top: var(--spacing-md); margin-bottom: var(--spacing-sm); color: var(--primary-navy);">
+                            What We Deliver:
+                        </h4>
+                        <ul style="padding-left: 1.5rem; color: var(--gray); line-height: 1.8;">
+                            <li><strong>Working Prototype:</strong> Functional AI solution demonstrating core capabilities</li>
+                            <li><strong>Performance Metrics:</strong> Quantitative assessment of accuracy, speed, and business impact</li>
+                            <li><strong>User Testing:</strong> Feedback from actual end-users to validate usability and value</li>
+                            <li><strong>Technical Feasibility Report:</strong> Assessment of scalability, integration challenges, and requirements</li>
+                            <li><strong>Cost-Benefit Analysis:</strong> Detailed ROI projections for full-scale implementation</li>
+                            <li><strong>Recommendations:</strong> Clear go/no-go recommendation with rationale and next steps</li>
+                        </ul>
+                        <button class="btn btn-primary" style="margin-top: var(--spacing-md);" onclick="openModal('modal-poc')">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 4: GenAI Consulting -->
+            <div class="card" id="consulting" style="margin-bottom: var(--spacing-xl);">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-lg); align-items: center;">
+                    <div class="card-content" style="order: 1;">
+                        <div style="display: inline-block; background: var(--gradient-primary); color: white; padding: 0.5rem 1.5rem; border-radius: 20px; font-weight: 600; margin-bottom: var(--spacing-sm); font-size: 0.9rem;">
+                            SERVICE 4
+                        </div>
+                        <h3 style="font-size: 2rem; margin-bottom: var(--spacing-md);">
+                            <span style="font-size: 2.5rem; margin-right: 0.5rem;">🤝</span>
+                            GenAI Consulting
+                        </h3>
+                        <p style="font-size: 1.05rem; line-height: 1.8;">
+                            Our comprehensive GenAI Consulting service provides end-to-end support for your AI transformation journey. From
+                            initial strategy through implementation and ongoing optimization, our expert consultants work as an extension of
+                            your team to ensure successful AI adoption and continuous improvement.
+                        </p>
+                        <h4 style="margin-top: var(--spacing-md); margin-bottom: var(--spacing-sm); color: var(--primary-navy);">
+                            What We Deliver:
+                        </h4>
+                        <ul style="padding-left: 1.5rem; color: var(--gray); line-height: 1.8;">
+                            <li><strong>Full Lifecycle Support:</strong> Guidance from strategy through deployment and beyond</li>
+                            <li><strong>Technical Implementation:</strong> Hands-on development, integration, and deployment support</li>
+                            <li><strong>Team Augmentation:</strong> Experienced AI specialists embedded in your teams</li>
+                            <li><strong>Training & Enablement:</strong> Skill development programs for your internal teams</li>
+                            <li><strong>Performance Optimization:</strong> Continuous monitoring and improvement of AI systems</li>
+                            <li><strong>Vendor Management:</strong> Support in selecting and managing AI technology vendors</li>
+                        </ul>
+                        <button class="btn btn-primary" style="margin-top: var(--spacing-md);" onclick="openModal('modal-consulting')">
+                            Learn More
+                        </button>
+                    </div>
+                    <div class="card-image" style="height: 400px; order: 2;">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80"
+                             alt="GenAI Consulting Services"
+                             loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Approach Section -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="text-gradient">Our Consulting Methodology</h2>
+                <p>A proven framework for successful AI transformation</p>
+            </div>
+            <div class="card-grid">
+                <div class="card card-dark">
+                    <div class="card-content">
+                        <div style="font-size: 3rem; margin-bottom: var(--spacing-sm);">🎯</div>
+                        <h3>1. Discover</h3>
+                        <p>
+                            We begin by deeply understanding your business, operations, challenges, and goals. Through workshops, interviews,
+                            and analysis, we identify opportunities where AI can deliver transformative value.
+                        </p>
+                    </div>
+                </div>
+                <div class="card card-dark">
+                    <div class="card-content">
+                        <div style="font-size: 3rem; margin-bottom: var(--spacing-sm);">📋</div>
+                        <h3>2. Design</h3>
+                        <p>
+                            Based on discoveries, we architect comprehensive solutions tailored to your needs. We create detailed blueprints
+                            covering technology, data, processes, and organizational change requirements.
+                        </p>
+                    </div>
+                </div>
+                <div class="card card-dark">
+                    <div class="card-content">
+                        <div style="font-size: 3rem; margin-bottom: var(--spacing-sm);">🔬</div>
+                        <h3>3. Develop</h3>
+                        <p>
+                            We build and test solutions through iterative POCs and pilots. This validates approaches, demonstrates value,
+                            and refines implementations based on real-world feedback before full-scale deployment.
+                        </p>
+                    </div>
+                </div>
+                <div class="card card-dark">
+                    <div class="card-content">
+                        <div style="font-size: 3rem; margin-bottom: var(--spacing-sm);">🚀</div>
+                        <h3>4. Deploy</h3>
+                        <p>
+                            With validated solutions, we support full-scale implementation including integration, testing, training, and
+                            change management to ensure smooth adoption across your organization.
+                        </p>
+                    </div>
+                </div>
+                <div class="card card-dark">
+                    <div class="card-content">
+                        <div style="font-size: 3rem; margin-bottom: var(--spacing-sm);">📊</div>
+                        <h3>5. Monitor</h3>
+                        <p>
+                            Post-deployment, we continuously monitor performance, measure impact, and track KPIs to ensure solutions
+                            deliver expected value and identify opportunities for improvement.
+                        </p>
+                    </div>
+                </div>
+                <div class="card card-dark">
+                    <div class="card-content">
+                        <div style="font-size: 3rem; margin-bottom: var(--spacing-sm);">🔄</div>
+                        <h3>6. Optimize</h3>
+                        <p>
+                            AI systems improve with use. We continuously optimize models, refine processes, and evolve solutions based
+                            on performance data and changing business needs to maximize long-term value.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries We Serve -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Industries We Serve</h2>
+                <p>Proven expertise across diverse sectors</p>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--spacing-md); max-width: 900px; margin: 0 auto;">
+                <div style="text-align: center; padding: var(--spacing-md); background: var(--light-gray); border-radius: var(--border-radius);">
+                    <div style="font-size: 3rem; margin-bottom: var(--spacing-sm);">💼</div>
+                    <h4 style="color: var(--primary-navy);">Technology & Software</h4>
+                </div>
+                <div style="text-align: center; padding: var(--spacing-md); background: var(--light-gray); border-radius: var(--border-radius);">
+                    <div style="font-size: 3rem; margin-bottom: var(--spacing-sm);">🏥</div>
+                    <h4 style="color: var(--primary-navy);">Healthcare & Wellness</h4>
+                </div>
+                <div style="text-align: center; padding: var(--spacing-md); background: var(--light-gray); border-radius: var(--border-radius);">
+                    <div style="font-size: 3rem; margin-bottom: var(--spacing-sm);">🎓</div>
+                    <h4 style="color: var(--primary-navy);">Education & Training</h4>
+                </div>
+                <div style="text-align: center; padding: var(--spacing-md); background: var(--light-gray); border-radius: var(--border-radius);">
+                    <div style="font-size: 3rem; margin-bottom: var(--spacing-sm);">🏛️</div>
+                    <h4 style="color: var(--primary-navy);">Public Services</h4>
+                </div>
+                <div style="text-align: center; padding: var(--spacing-md); background: var(--light-gray); border-radius: var(--border-radius);">
+                    <div style="font-size: 3rem; margin-bottom: var(--spacing-sm);">💰</div>
+                    <h4 style="color: var(--primary-navy);">Financial Services</h4>
+                </div>
+                <div style="text-align: center; padding: var(--spacing-md); background: var(--light-gray); border-radius: var(--border-radius);">
+                    <div style="font-size: 3rem; margin-bottom: var(--spacing-sm);">📱</div>
+                    <h4 style="color: var(--primary-navy);">Media & Entertainment</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section section-dark">
+        <div class="container">
+            <div style="text-align: center; padding: var(--spacing-lg) 0;">
+                <h2 class="text-gradient" style="font-size: 2.5rem; margin-bottom: var(--spacing-md);">
+                    Ready to Begin Your AI Transformation?
+                </h2>
+                <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto var(--spacing-md); color: rgba(255, 255, 255, 0.9);">
+                    Schedule a consultation with our AI experts to discuss your specific needs and explore how we can help you
+                    harness the power of Generative AI.
+                </p>
+                <div class="cta-buttons" style="justify-content: center;">
+                    <a href="contact.html" class="btn btn-primary">Schedule Consultation</a>
+                    <a href="products.html" class="btn btn-outline">View Products</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Modals -->
+
+    <!-- Modal: Advisory -->
+    <div class="modal" id="modal-advisory">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('modal-advisory')">&times;</button>
+            <h2>GenAI Advisory Service</h2>
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80"
+                 alt="GenAI Advisory"
+                 style="width: 100%; border-radius: var(--border-radius); margin: var(--spacing-md) 0;"
+                 loading="lazy">
+            <h3>Strategic AI Guidance for Enterprise Success</h3>
+
+            <h4>Objective</h4>
+            <p>
+                Providing consultative advice and actionable GenAI solutions to optimize business functions across a variety of industries, 4sight AI has invested over 10,000 hours of research and engagement with 11+ Fortune 500 companies, establishing its expertise in developing product-based GenAI solutions.
+            </p>
+
+            <h4>Service Offerings</h4>
+
+            <p><strong>Use Case Identification & Selection:</strong> We assist businesses in pinpointing and evaluating GenAI use cases that align with their specific operational needs and strategic goals. Our systematic approach ensures that identified opportunities deliver maximum business impact. We use a proprietary framework that evaluates potential use cases based on technical feasibility, business value, implementation complexity, and strategic alignment.</p>
+
+            <p><strong>Assessment & Recommendations:</strong> Through a comprehensive AI readiness assessment, we identify gaps and provide tailored recommendations to prepare businesses for successful GenAI integration. Our assessment covers technical infrastructure, data maturity, organizational capabilities, change readiness, and governance frameworks. We deliver a detailed report with prioritized action items and timelines for addressing identified gaps.</p>
+
+            <p><strong>Solution Design & Architecture:</strong> Our team designs scalable, secure, and efficient GenAI solutions that integrate seamlessly with existing business systems. We provide detailed architecture blueprints that guide implementation teams, including data flow diagrams, system integration patterns, security frameworks, and infrastructure recommendations. Our designs consider both current needs and future scalability requirements.</p>
+
+            <p><strong>Implementation Roadmap:</strong> We develop phased implementation roadmaps that balance quick wins with long-term strategic value, ensuring sustainable AI adoption across your organization. Each roadmap includes clear milestones, resource requirements, success criteria, and risk mitigation strategies. We prioritize initiatives based on business value, technical dependencies, and organizational capacity.</p>
+
+            <h4>Key Features</h4>
+            <ul style="padding-left: 1.5rem; color: var(--gray); margin-bottom: var(--spacing-md);">
+                <li><strong>Tailored AI Strategy:</strong> Develops custom AI strategies that align with each organization's unique industry requirements, goals, and business environment.</li>
+                <li><strong>Organizational Change Management:</strong> Supports businesses through the AI transition, integrating change management to address cultural shifts and business challenges.</li>
+                <li><strong>Industry-Specific Expertise:</strong> Leverages deep industry insights to identify high-impact AI use cases and deliver solutions suited to various sectors.</li>
+                <li><strong>Executive-Level Consulting:</strong> Provides strategic guidance to leadership teams on AI adoption, governance, and ethical considerations.</li>
+                <li><strong>Advanced Tool Selection:</strong> Recommends the latest AI tools and techniques to optimize processes, drive efficiency, and maintain a competitive edge.</li>
+            </ul>
+
+            <h4>Why Choose 4sight AI</h4>
+            <ul style="padding-left: 1.5rem; color: var(--gray); margin-bottom: var(--spacing-md);">
+                <li><strong>Proven Expertise:</strong> 10,000+ hours of GenAI research and real-world implementation experience across multiple industries and use cases</li>
+                <li><strong>Enterprise Scale:</strong> Experience with 11+ Fortune 500 companies across diverse industries including technology, healthcare, education, and financial services</li>
+                <li><strong>Product-Based Approach:</strong> We build solutions that can scale from POC to enterprise-wide deployment, ensuring long-term viability and ROI</li>
+                <li><strong>Industry Knowledge:</strong> Deep understanding of industry-specific challenges, regulatory requirements, and opportunities for AI integration</li>
+                <li><strong>Practical Focus:</strong> Actionable recommendations that drive measurable business outcomes, not just theoretical frameworks</li>
+                <li><strong>Technology Agnostic:</strong> We recommend solutions based on your needs, not vendor partnerships, ensuring unbiased guidance</li>
+            </ul>
+
+            <h4>Why GenAI Advisory Services</h4>
+            <p>AI Advisory Services deliver substantial benefits by helping organizations navigate the complex AI landscape with confidence and precision. By tailoring AI strategies to specific industry needs, these services ensure that AI implementations align with business goals, maximizing value and minimizing risk. AI Advisory also provides insights into the latest tools and techniques, guiding companies to select the right technologies for transformative outcomes. Additionally, change management support helps teams adapt seamlessly, fostering a culture ready to embrace AI-driven innovation and maintaining a competitive advantage in a rapidly evolving market.</p>
+
+            <h4>Typical Engagement Duration</h4>
+            <p>4-8 weeks depending on organization size and complexity</p>
+
+            <h4>Deliverables Include</h4>
+            <ul style="padding-left: 1.5rem; color: var(--gray); margin-bottom: var(--spacing-md);">
+                <li>Executive presentation on AI opportunities and strategy</li>
+                <li>Comprehensive AI readiness assessment report</li>
+                <li>Prioritized use case portfolio with ROI estimates</li>
+                <li>3-year AI transformation roadmap</li>
+                <li>Detailed solution architecture and technology recommendations</li>
+                <li>Implementation roadmap with phased approach</li>
+                <li>Organizational change management framework</li>
+            </ul>
+
+            <h4>Who Should Consider This Service</h4>
+            <ul style="padding-left: 1.5rem; color: var(--gray); margin-bottom: var(--spacing-md);">
+                <li>Organizations exploring AI for the first time</li>
+                <li>Executives seeking to understand AI's potential impact</li>
+                <li>Companies with fragmented AI initiatives needing coherent strategy</li>
+                <li>Businesses evaluating AI investment priorities</li>
+                <li>Enterprises ready to scale AI across multiple functions</li>
+            </ul>
+
+            <a href="contact.html" class="btn btn-primary" style="margin-top: var(--spacing-md);">Schedule Advisory Session</a>
+        </div>
+    </div>
+
+    <!-- Modal: Scoping -->
+    <div class="modal" id="modal-scoping">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('modal-scoping')">&times;</button>
+            <h2>GenAI Project Scoping & Blueprinting</h2>
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80"
+                 alt="Project Scoping"
+                 style="width: 100%; border-radius: var(--border-radius); margin: var(--spacing-md) 0;"
+                 loading="lazy">
+            <h3>Detailed Planning for Successful AI Implementation</h3>
+
+            <h4>Objective</h4>
+            <p>
+                The service is aimed at laying a solid foundation for any GenAI project by providing a clear, detailed blueprint that outlines every technical and operational aspect necessary for successful project execution. This comprehensive approach ensures that all stakeholders have a shared understanding of the project scope, requirements, and implementation path. Choosing the right Large Language Model (LLM) for specific tasks is crucial to maximizing AI's potential. Our experienced team knows how to balance the key factors of cost, efficiency, and accuracy, which are essential for a sustainable and impactful AI implementation.
+            </p>
+
+            <h4>Key Components</h4>
+
+            <p><strong>Use Case Definition:</strong> Precisely identifying and defining the use case that the GenAI solution will address. We work closely with stakeholders to ensure the use case aligns with business objectives and delivers measurable value. Our definition process includes detailed user journey mapping, pain point analysis, and success metric identification.</p>
+
+            <p><strong>Requirement Analysis:</strong> Comprehensive gathering and analysis of all technical, functional, and business requirements. This includes understanding user needs, system constraints, performance expectations, and integration requirements to ensure the solution meets all stakeholder expectations. We conduct stakeholder interviews, system audits, and competitive analysis to build a complete requirements picture.</p>
+
+            <p><strong>Data Analysis & Strategy:</strong> Identifying data sources, assessing data quality, and strategizing data collection, storage, and processing. We evaluate data readiness, define data pipelines, establish governance frameworks, and ensure compliance with privacy and security regulations. Our data strategy addresses both structured and unstructured data, considering volume, velocity, and variety requirements.</p>
+
+            <p><strong>Solution Architecting:</strong> Designing a scalable, robust, and efficient GenAI solution architecture that addresses current needs while anticipating future growth. Our architecture designs cover infrastructure, integration patterns, security frameworks, and deployment strategies. We provide detailed technical blueprints including system diagrams, data flow specifications, and technology stack recommendations.</p>
+
+            <p><strong>Model Selection and Cost Efficiency:</strong> By selecting the right Large Language Models (LLMs) based on cost, efficiency, and accuracy, the service ensures that AI projects are effective and financially sustainable, helping organizations avoid common AI implementation challenges. We evaluate multiple models, conduct comparative analysis, and provide clear recommendations with cost-benefit projections.</p>
+
+            <p><strong>Risk Assessment:</strong> Evaluating potential risks associated with the project including technical challenges, resource constraints, data quality issues, and organizational change factors. We provide detailed mitigation strategies for each identified risk to ensure project success. Our risk assessment includes probability-impact analysis and contingency planning.</p>
+
+            <p><strong>Resource Planning:</strong> Defining team composition, skill requirements, technology stack, and infrastructure needs. We help you understand what resources are necessary for successful implementation and how to acquire them efficiently. This includes identifying skill gaps and recommending training or hiring strategies.</p>
+
+            <p><strong>Timeline & Milestones:</strong> Creating realistic project schedules with clear milestones, dependencies, and success criteria. Our timelines balance the need for rapid delivery with the complexity of enterprise AI implementation. We account for development, testing, deployment, and change management phases.</p>
+
+            <h4>Key Features</h4>
+            <ul style="padding-left: 1.5rem; color: var(--gray); margin-bottom: var(--spacing-md);">
+                <li><strong>Strategic Alignment and Prioritization:</strong> This service helps organizations clarify their AI goals, ensuring that initiatives align with business objectives to maximize impact. By focusing on high-value use cases, companies can drive measurable results and ROI.</li>
+                <li><strong>Enhanced Decision-Making with RLHF:</strong> GenAI Blueprinting offers expertise in Reinforcement Learning from Human Feedback (RLHF), enabling AI systems to manage tasks that require human involvement initially. This approach allows the AI to evolve, progressively handling more complex processes over time.</li>
+                <li><strong>Model Selection and Cost Efficiency:</strong> By selecting the right Large Language Models (LLMs) based on cost, efficiency, and accuracy, the service ensures that AI projects are effective and financially sustainable, helping organizations avoid common AI implementation challenges.</li>
+                <li><strong>Scalable and Future-Proofed Architectures:</strong> GenAI Blueprinting designs flexible architectures that adapt to technological advancements, ensuring solutions deployed today can evolve with future innovations and changing business needs.</li>
+                <li><strong>Speed and Agility in Deployment:</strong> The blueprinting process enables rapid yet thorough project scoping, accelerating time-to-value and allowing organizations to stay competitive in fast-moving markets.</li>
+                <li><strong>Optimized Resource Allocation:</strong> This service ensures resources are allocated efficiently by assessing technological readiness and identifying skill gaps, enabling companies to deploy GenAI in areas with the highest potential for growth and efficiency.</li>
+            </ul>
+
+            <h4>Why This Service is Essential</h4>
+            <ul style="padding-left: 1.5rem; color: var(--gray); margin-bottom: var(--spacing-md);">
+                <li><strong>Reduces Project Risk:</strong> Identifies and addresses potential challenges before development begins, reducing the likelihood of costly mistakes and project failures</li>
+                <li><strong>Aligns Stakeholders:</strong> Creates shared understanding across technical and business teams, ensuring everyone works toward common goals</li>
+                <li><strong>Enables Accurate Estimation:</strong> Provides clear scope for realistic budgeting and resource planning, avoiding budget overruns and resource shortages</li>
+                <li><strong>Accelerates Development:</strong> Well-defined requirements and architecture speed up implementation by providing clear guidance to development teams</li>
+                <li><strong>Ensures Quality:</strong> Comprehensive planning leads to better architectural decisions and outcomes, resulting in more robust and maintainable solutions</li>
+                <li><strong>Navigates Complexity:</strong> The rapidly advancing field of GenAI requires nuanced understanding to navigate its complexities—experience that 4sight AI brings with deep understanding of underlying technologies and strategic foresight</li>
+            </ul>
+
+            <h4>Typical Engagement Duration</h4>
+            <p>6-10 weeks depending on project complexity</p>
+
+            <h4>Deliverables Include</h4>
+            <ul style="padding-left: 1.5rem; color: var(--gray); margin-bottom: var(--spacing-md);">
+                <li>Detailed use case definition document</li>
+                <li>Comprehensive requirements specification (functional and non-functional)</li>
+                <li>Data strategy and governance framework</li>
+                <li>Detailed technical architecture diagrams and documentation</li>
+                <li>Project charter with scope, timeline, and resource plan</li>
+                <li>Risk register with detailed mitigation strategies</li>
+                <li>Success criteria and KPI framework</li>
+                <li>Implementation roadmap with phased delivery approach</li>
+            </ul>
+
+            <h4>Conclusion</h4>
+            <p>
+                GenAI Project Scoping & Blueprinting is an essential service for businesses embarking on GenAI projects. It transforms abstract ideas into concrete, executable plans that significantly increase the likelihood of project success. By investing in thorough planning, organizations avoid costly mistakes, reduce implementation time, and ensure their GenAI solutions deliver expected business value.
+            </p>
+
+            <a href="contact.html" class="btn btn-primary" style="margin-top: var(--spacing-md);">Request Project Scoping</a>
+        </div>
+    </div>
+
+    <!-- Modal: POC -->
+    <div class="modal" id="modal-poc">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('modal-poc')">&times;</button>
+            <h2>Building GenAI POC</h2>
+            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80"
+                 alt="POC Development"
+                 style="width: 100%; border-radius: var(--border-radius); margin: var(--spacing-md) 0;"
+                 loading="lazy">
+            <h3>Validate AI Concepts Before Full Investment</h3>
+            <p>
+                Our POC development service provides rapid, focused implementations that demonstrate AI value in your specific context.
+                We build working prototypes that prove technical feasibility and business impact before you commit to full-scale deployment.
+            </p>
+            <h4>Typical Engagement Duration</h4>
+            <p>4-8 weeks for most use cases</p>
+            <h4>Our POC Development Process</h4>
+            <ul style="padding-left: 1.5rem; color: var(--gray); margin-bottom: var(--spacing-md);">
+                <li><strong>Week 1-2:</strong> Requirements finalization and data preparation</li>
+                <li><strong>Week 3-5:</strong> Model development, training, and initial testing</li>
+                <li><strong>Week 6-7:</strong> User testing, feedback integration, and refinement</li>
+                <li><strong>Week 8:</strong> Final evaluation, documentation, and recommendations</li>
+            </ul>
+            <h4>What Makes Our POCs Effective</h4>
+            <ul style="padding-left: 1.5rem; color: var(--gray); margin-bottom: var(--spacing-md);">
+                <li>Clear success criteria defined upfront</li>
+                <li>Real data and realistic scenarios</li>
+                <li>Involvement of actual end-users throughout</li>
+                <li>Rigorous testing and performance measurement</li>
+                <li>Honest assessment of limitations and challenges</li>
+            </ul>
+            <h4>Typical Outcomes</h4>
+            <p>
+                70-80% of our POCs proceed to full implementation based on demonstrated value. Even when POCs reveal challenges,
+                clients appreciate the insights gained and costs avoided by validating assumptions early.
+            </p>
+            <a href="contact.html" class="btn btn-primary" style="margin-top: var(--spacing-md);">Propose a POC</a>
+        </div>
+    </div>
+
+    <!-- Modal: Consulting -->
+    <div class="modal" id="modal-consulting">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('modal-consulting')">&times;</button>
+            <h2>GenAI Consulting</h2>
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80"
+                 alt="GenAI Consulting"
+                 style="width: 100%; border-radius: var(--border-radius); margin: var(--spacing-md) 0;"
+                 loading="lazy">
+            <h3>Comprehensive AI Transformation Partnership</h3>
+
+            <h4>Objective</h4>
+            <p>
+                To empower businesses with expert guidance and strategic insights into leveraging GenAI technologies for operational excellence and competitive advantage. Our consulting service is designed to be your strategic partner in navigating the complexities of Generative AI, ensuring that your investments in AI technologies translate into tangible business value.
+            </p>
+
+            <h4>Service Offerings</h4>
+
+            <p><strong>Strategic Consultation:</strong> We provide comprehensive consultations that cover the exploration of GenAI technologies, their potential applications within your business, and strategic planning to integrate these technologies effectively. Our consultants work closely with your leadership team to develop AI strategies that align with your business objectives and drive measurable results. We bring expertise in leading AI frameworks like LangChain, LlamaIndex, and vector databases such as Pinecone, ensuring that AI solutions are built with the most effective tools for language processing, data retrieval, and real-time analytics.</p>
+
+            <p><strong>Technology Alignment:</strong> Our experts help align your existing technological infrastructure with GenAI capabilities. We assess your current technology stack, identify integration opportunities, and design solutions that leverage your existing investments while incorporating cutting-edge GenAI technologies. This ensures seamless integration and maximizes ROI on both existing and new technology investments. We work with advanced frameworks like Haystack and txtai for sophisticated querying and semantic search capabilities.</p>
+
+            <p><strong>Skill Development & Training:</strong> We offer comprehensive training programs designed to upskill your team in GenAI technologies and best practices. Our training covers technical skills, strategic thinking, ethical AI considerations, and practical implementation approaches. We believe in building internal capabilities that enable your organization to sustain and evolve your AI initiatives long after our engagement. Training includes hands-on experience with industry-leading tools and frameworks.</p>
+
+            <p><strong>Implementation Support:</strong> Beyond strategy and planning, we provide hands-on implementation support to ensure successful deployment of GenAI solutions. Our team works alongside yours to build, test, and deploy AI systems that meet your requirements and deliver expected value. Using flexible tools like LangChain and txtai, our team can quickly develop and scale AI prototypes, reducing time-to-market and enabling fast, iterative improvements based on real-world feedback.</p>
+
+            <p><strong>Continuous Optimization:</strong> AI systems improve over time. We provide ongoing consulting support to monitor performance, identify optimization opportunities, and evolve your AI solutions as your business needs change and technology advances. Our consultants work closely with your teams to ensure that AI solutions evolve alongside your business, adapting as new technologies emerge and your business needs change.</p>
+
+            <h4>Engagement Models</h4>
+            <ul style="padding-left: 1.5rem; color: var(--gray); margin-bottom: var(--spacing-md);">
+                <li><strong>Embedded Consultants:</strong> Our experts join your teams full-time or part-time to provide dedicated support</li>
+                <li><strong>Advisory Retainer:</strong> Regular strategic guidance and ad-hoc support for ongoing initiatives</li>
+                <li><strong>Managed Services:</strong> We handle specific aspects of your AI operations end-to-end</li>
+                <li><strong>Project-Based:</strong> Focused support for specific initiatives with defined scope and timeline</li>
+            </ul>
+
+            <h4>Key Features</h4>
+            <ul style="padding-left: 1.5rem; color: var(--gray); margin-bottom: var(--spacing-md);">
+                <li><strong>Strategic Integration with Cutting-Edge Tools:</strong> Our consultants bring expertise in leading AI frameworks like LangChain, LlamaIndex, and vector databases such as Pinecone, ensuring that AI solutions are built with the most effective tools for language processing, data retrieval, and real-time analytics.</li>
+                <li><strong>Tailored AI Models for Enhanced Performance:</strong> By leveraging specialty LLMs from platforms like Hugging Face and Haystack, our team can fine-tune models to suit your specific industry needs, whether for personalized recommendations, customer support automation, or complex data analysis.</li>
+                <li><strong>Ethical AI Deployment and Governance:</strong> 4sight AI emphasizes responsible AI practices. Our consultants implement frameworks that ensure transparency, fairness, and accountability, helping your organization adhere to ethical guidelines and regulatory standards while building stakeholder trust.</li>
+                <li><strong>Rapid Prototyping with Scalable Solutions:</strong> Using flexible tools like LangChain and txtai, our team can quickly develop and scale AI prototypes, reducing time-to-market and enabling fast, iterative improvements based on real-world feedback.</li>
+                <li><strong>Seamless Data Integration and Advanced Processing:</strong> With robust skills in data connectivity, our consultants set up real-time access to multiple data sources through tools like LlamaIndex. This enhances the AI's contextual relevance and ensures efficient data handling across diverse sources.</li>
+                <li><strong>Empowerment and Training of Client Teams:</strong> Beyond delivering AI solutions, we provide hands-on training and resources to equip your team with the skills needed to operate and maintain AI systems. This empowers your organization to independently manage AI technology and adapt to future innovations.</li>
+                <li><strong>Ongoing Support for Continuous Improvement:</strong> Our consultants work closely with your teams to ensure that AI solutions evolve alongside your business. We provide continuous updates and support, enabling your organization to adapt AI strategies as new technologies emerge and your business needs change.</li>
+                <li><strong>Cost-Effective and Efficient AI Solutions:</strong> By optimizing model selection and configuration, our consultants ensure that your AI systems maximize ROI and minimize costs. This approach helps you achieve sustainable, long-term value from your AI investments.</li>
+            </ul>
+
+            <h4>Areas of Expertise</h4>
+            <ul style="padding-left: 1.5rem; color: var(--gray); margin-bottom: var(--spacing-md);">
+                <li>AI strategy development and refinement</li>
+                <li>Technical implementation and development with LangChain, LlamaIndex, Pinecone, and Hugging Face</li>
+                <li>Data engineering, vector databases, and MLOps</li>
+                <li>Change management and organizational adoption</li>
+                <li>Training and capability building on latest AI tools and frameworks</li>
+                <li>Performance monitoring and optimization</li>
+                <li>Vendor selection and management</li>
+                <li>Governance and ethical AI frameworks</li>
+            </ul>
+
+            <h4>Why Choose 4sight AI as Your Consulting Partner</h4>
+            <ul style="padding-left: 1.5rem; color: var(--gray); margin-bottom: var(--spacing-md);">
+                <li><strong>Proven Experience:</strong> 10,000+ hours of GenAI research and implementation across diverse use cases and industries</li>
+                <li><strong>Enterprise Track Record:</strong> Successful engagements with 11+ Fortune 500 companies delivering measurable business value</li>
+                <li><strong>Industry Expertise:</strong> Deep knowledge across 7+ industries including technology, healthcare, education, financial services, and public services</li>
+                <li><strong>Holistic Approach:</strong> We combine technical excellence with business acumen, change management, and ethical AI considerations</li>
+                <li><strong>Knowledge Transfer Focus:</strong> Committed to building your internal capabilities for long-term success and AI independence</li>
+                <li><strong>Flexible Engagement:</strong> Adaptable models that fit your organization's unique needs, constraints, and budget</li>
+                <li><strong>Technology Leadership:</strong> Expertise with latest AI frameworks and tools including LangChain, LlamaIndex, Pinecone, Haystack, txtai, and Hugging Face</li>
+            </ul>
+
+            <h4>Conclusion</h4>
+            <p>
+                GenAI Consulting by 4sight AI is designed to be your strategic partner in navigating the complexities of Generative AI. Whether you're just beginning your AI journey or looking to scale existing initiatives, our comprehensive consulting services provide the expertise, guidance, and hands-on support you need to succeed. We don't just advise—we partner with you to ensure your AI investments deliver sustainable business value.
+            </p>
+
+            <a href="contact.html" class="btn btn-primary" style="margin-top: var(--spacing-md);">Discuss Consulting Needs</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>4sight AI</h3>
+                    <p>Empowering Enterprises to harness the power of AI</p>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/company/4sight-ai" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a href="https://twitter.com/4sightai" target="_blank" rel="noopener" aria-label="Twitter">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="https://github.com/4sightai" target="_blank" rel="noopener" aria-label="GitHub">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#advisory">GenAI Advisory</a></li>
+                        <li><a href="#scoping">Project Scoping & Blueprint</a></li>
+                        <li><a href="#poc">Building GenAI POC</a></li>
+                        <li><a href="#consulting">GenAI Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="terms.html#privacy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 4sight AI. All rights reserved. | Bangalore, India</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Contact Button -->
+    <a href="contact.html" class="floating-contact" aria-label="Contact Us">
+        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+        </svg>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="js/cursor.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/animate-cards.js"></script>
+
+    <!-- Responsive CSS for Services Page -->
+    <style>
+        @media (max-width: 768px) {
+            .card > div[style*="grid-template-columns: 1fr 1fr"] {
+                grid-template-columns: 1fr !important;
+            }
+            .card > div > div[style*="order: 1"],
+            .card > div > div[style*="order: 2"] {
+                order: 0 !important;
+            }
+            .card-image {
+                height: 250px !important;
+            }
+        }
+    </style>
+</body>
+</html>

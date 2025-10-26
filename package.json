@@ -1,0 +1,37 @@
+{
+  "name": "4sight-ai-website",
+  "version": "1.0.0",
+  "description": "4SIGHT AI - Empowering Enterprises with AI",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server -p 3000 -o",
+    "serve": "serve -s . -l 3000",
+    "dev": "live-server --port=3000 --open=/",
+    "build": "echo 'No build process needed for static site'",
+    "test": "echo 'No tests specified'",
+    "server": "node server.js"
+  },
+  "keywords": [
+    "AI",
+    "Artificial Intelligence",
+    "Enterprise",
+    "4sight"
+  ],
+  "author": "4sight AI",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^24.9.1",
+    "concurrently": "^9.2.1",
+    "eslint": "^9.38.0",
+    "http-server": "^14.1.1",
+    "live-server": "^1.2.2",
+    "nodemon": "^3.1.10",
+    "prettier": "^3.6.2",
+    "serve": "^14.2.5",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  }
+}

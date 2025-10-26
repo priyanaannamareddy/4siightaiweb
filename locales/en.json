@@ -1,0 +1,117 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "products": "Products",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "hero": {
+    "tagline": "Empowering Enterprises to harness the power of AI",
+    "heading": "Welcome to 4sight AI",
+    "text": "Where the future of enterprise technology begins",
+    "exploreProducts": "Explore Products",
+    "contactSales": "Contact Sales"
+  },
+  "slides": {
+    "aiSolutions": {
+      "heading": "Cutting-Edge AI Solutions",
+      "text": "Transform your business with state-of-the-art artificial intelligence and machine learning technologies."
+    },
+    "enterpriseAutomation": {
+      "heading": "Enterprise Automation",
+      "text": "Streamline your operations and boost productivity with our intelligent automation solutions."
+    },
+    "innovation": {
+      "heading": "Driving Innovation",
+      "text": "Stay ahead of the curve with our forward-thinking AI implementations and solutions."
+    }
+  },
+  "about": {
+    "heading": "About 4sight AI",
+    "text": "Pioneering the future of enterprise intelligence",
+    "mission": {
+      "heading": "Our Mission",
+      "text": "We are a Bangalore-based AI innovation firm dedicated to transforming enterprises through cutting-edge Generative AI solutions. Our focus spans multiple industries including technology, healthcare, education, and public services."
+    },
+    "vision": {
+      "heading": "Our Vision",
+      "text": "In a world where the utility of Artificial Intelligence is increasingly indisputable, we envision seamless integration of AI across all enterprise operations, driving unprecedented efficiency and innovation."
+    },
+    "approach": {
+      "heading": "Our Approach",
+      "text": "We begin with comprehensive audits to identify AI opportunities, then guide enterprises through strategic transition phases, culminating in full-scale automation and AGI integration."
+    }
+  },
+  "products": {
+    "heading": "Featured Products",
+    "text": "Transformative AI solutions tailored for your industry",
+    "aiEnvelop": {
+      "heading": "AI Envelop",
+      "text": "AI Envelop is our flagship enterprise AI infrastructure solution designed to seamlessly wrap around your existing systems and processes."
+    },
+    "nutritionCopilot": {
+      "heading": "Nutrition Co-Pilot",
+      "text": "AI-powered nutrition guidance system that provides personalized dietary recommendations and health insights for wellness enterprises."
+    },
+    "newsAI": {
+      "heading": "News AI",
+      "text": "Intelligent news aggregation and analysis platform that curates, summarizes, and delivers personalized news insights in real-time."
+    },
+    "viewAll": "View All Products"
+  },
+  "services": {
+    "heading": "Our Services",
+    "text": "End-to-end Generative AI solutions for enterprise transformation",
+    "genAIAdvisory": {
+      "heading": "GenAI Advisory",
+      "text": "Strategic guidance on integrating Generative AI into your business operations, identifying high-impact use cases and creating actionable roadmaps."
+    },
+    "projectScoping": {
+      "heading": "Project Scoping & Blueprint",
+      "text": "Detailed project planning and architecture design for GenAI implementations, ensuring alignment with business objectives and technical feasibility."
+    },
+    "buildingPOC": {
+      "heading": "Building GenAI POC",
+      "text": "Rapid development of proof-of-concept solutions to validate AI use cases and demonstrate value before full-scale implementation."
+    },
+    "genAIConsulting": {
+      "heading": "GenAI Consulting",
+      "text": "Comprehensive consulting services covering all aspects of GenAI adoption, from strategy to implementation and ongoing optimization."
+    }
+  },
+  "stats": {
+    "heading": "Our Impact",
+    "text": "Delivering measurable results across industries",
+    "industries": "Industries",
+    "deployments": "Deployments",
+    "inWorks": "In Works",
+    "inBlueprinting": "In Blueprinting",
+    "inDiscussions": "In Discussions",
+    "researchHours": "Research Hours",
+    "productivityIncrease": "AI Productivity Increase (%)"
+  },
+  "visionTeaser": {
+    "heading": "The Future Is Now",
+    "quote": "In a world where the utility of Artificial Intelligence is increasingly indisputable, we see a future where every enterprise operation is enhanced by intelligent automation, where AGI seamlessly integrates with human expertise to unlock unprecedented innovation and efficiency.",
+    "text": "At 4sight AI, we're not just building tools—we're architecting the intelligent enterprise of tomorrow.",
+    "exploreVision": "Explore Our Vision"
+  },
+  "cta": {
+    "heading": "Let's Build the Future Together",
+    "text": "Ready to transform your enterprise with cutting-edge AI solutions? Our team of experts is here to guide you every step of the way.",
+    "getInTouch": "Get In Touch",
+    "exploreServices": "Explore Services"
+  },
+  "footer": {
+    "heading": "4sight AI",
+    "text": "Empowering Enterprises to harness the power of AI",
+    "quickLinks": "Quick Links",
+    "products": "Products",
+    "legal": "Legal",
+    "terms": "Terms & Conditions",
+    "privacy": "Privacy Policy",
+    "copyright": "© 2025 4sight AI. All rights reserved. | Bangalore, India"
+  },
+  "floatingContact": "Contact Us"
+}

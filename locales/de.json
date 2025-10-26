@@ -1,0 +1,117 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "products": "Produkte",
+    "services": "Dienstleistungen",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "tagline": "Unternehmen ermächtigen, die Kraft der KI zu nutzen",
+    "heading": "Willkommen bei 4sight AI",
+    "text": "Wo die Zukunft der Unternehmenstechnologie beginnt",
+    "exploreProducts": "Produkte erkunden",
+    "contactSales": "Vertrieb kontaktieren"
+  },
+  "slides": {
+    "aiSolutions": {
+      "heading": "Hochmoderne KI-Lösungen",
+      "text": "Transformieren Sie Ihr Unternehmen mit modernsten KI- und maschinellen Lerntechnologien."
+    },
+    "enterpriseAutomation": {
+      "heading": "Unternehmensautomatisierung",
+      "text": "Optimieren Sie Ihre Abläufe und steigern Sie die Produktivität mit unseren intelligenten Automatisierungslösungen."
+    },
+    "innovation": {
+      "heading": "Innovation vorantreiben",
+      "text": "Bleiben Sie an der Spitze mit unseren zukunftsorientierten KI-Implementierungen und -Lösungen."
+    }
+  },
+  "about": {
+    "heading": "Über 4sight AI",
+    "text": "Pioniere der Zukunft der Unternehmensintelligenz",
+    "mission": {
+      "heading": "Unsere Mission",
+      "text": "Wir sind ein Bangalore-basiertes KI-Innovationsunternehmen, das sich der Transformation von Unternehmen durch modernste Generative KI-Lösungen widmet. Unser Fokus erstreckt sich über mehrere Branchen einschließlich Technologie, Gesundheitswesen, Bildung und öffentliche Dienste."
+    },
+    "vision": {
+      "heading": "Unsere Vision",
+      "text": "In einer Welt, in der der Nutzen künstlicher Intelligenz zunehmend unbestreitbar ist, stellen wir uns eine nahtlose Integration von KI in alle Unternehmensabläufe vor, die beispiellose Effizienz und Innovation antreibt."
+    },
+    "approach": {
+      "heading": "Unser Ansatz",
+      "text": "Wir beginnen mit umfassenden Audits, um KI-Möglichkeiten zu identifizieren, und führen dann Unternehmen durch strategische Übergangsphasen, die in vollständiger Automatisierung und AGI-Integration gipfeln."
+    }
+  },
+  "products": {
+    "heading": "Ausgewählte Produkte",
+    "text": "Transformative KI-Lösungen, maßgeschneidert für Ihre Branche",
+    "aiEnvelop": {
+      "heading": "AI Envelop",
+      "text": "AI Envelop ist unsere Flaggschiff-Unternehmens-KI-Infrastrukturlösung, die entwickelt wurde, um sich nahtlos um Ihre bestehenden Systeme und Prozesse zu legen."
+    },
+    "nutritionCopilot": {
+      "heading": "Nutrition Co-Pilot",
+      "text": "KI-gestütztes Ernährungsberatungssystem, das personalisierte Ernährungsempfehlungen und Gesundheitseinblicke für Wellness-Unternehmen bietet."
+    },
+    "newsAI": {
+      "heading": "News AI",
+      "text": "Intelligente Nachrichtenaggregations- und Analyseplattform, die Nachrichten kuratiert, zusammenfasst und personalisierte Nachrichten-Einblicke in Echtzeit liefert."
+    },
+    "viewAll": "Alle Produkte anzeigen"
+  },
+  "services": {
+    "heading": "Unsere Dienstleistungen",
+    "text": "End-to-End Generative KI-Lösungen für die Unternehmenstransformation",
+    "genAIAdvisory": {
+      "heading": "GenAI-Beratung",
+      "text": "Strategische Beratung zur Integration von Generativer KI in Ihre Geschäftsabläufe, Identifizierung von High-Impact-Anwendungsfällen und Erstellung umsetzbarer Roadmaps."
+    },
+    "projectScoping": {
+      "heading": "Projektumfang und Blueprint",
+      "text": "Detaillierte Projektplanung und Architekturdesign für GenAI-Implementierungen, Sicherstellung der Ausrichtung an Geschäftsziele und technischer Machbarkeit."
+    },
+    "buildingPOC": {
+      "heading": "GenAI POC erstellen",
+      "text": "Schnelle Entwicklung von Proof-of-Concept-Lösungen zur Validierung von KI-Anwendungsfällen und Demonstration von Wert vor der großskaligen Implementierung."
+    },
+    "genAIConsulting": {
+      "heading": "GenAI-Beratung",
+      "text": "Umfassende Beratungsdienstleistungen, die alle Aspekte der GenAI-Adoption abdecken, von Strategie bis Implementierung und laufender Optimierung."
+    }
+  },
+  "stats": {
+    "heading": "Unser Impact",
+    "text": "Messbare Ergebnisse in allen Branchen liefern",
+    "industries": "Branchen",
+    "deployments": "Bereitstellungen",
+    "inWorks": "In Arbeit",
+    "inBlueprinting": "In Planung",
+    "inDiscussions": "In Diskussionen",
+    "researchHours": "Forschungsstunden",
+    "productivityIncrease": "KI-Produktivitätssteigerung (%)"
+  },
+  "visionTeaser": {
+    "heading": "Die Zukunft ist Jetzt",
+    "quote": "In einer Welt, in der der Nutzen künstlicher Intelligenz zunehmend unbestreitbar ist, sehen wir eine Zukunft, in der jeder Unternehmensablauf durch intelligente Automatisierung verbessert wird, wo AGI sich nahtlos mit menschlicher Expertise integriert, um beispiellose Innovation und Effizienz freizusetzen.",
+    "text": "Bei 4sight AI bauen wir nicht nur Tools—wir gestalten das intelligente Unternehmen von morgen.",
+    "exploreVision": "Unsere Vision erkunden"
+  },
+  "cta": {
+    "heading": "Bauen wir die Zukunft gemeinsam auf",
+    "text": "Bereit, Ihr Unternehmen mit modernsten KI-Lösungen zu transformieren? Unser Expertenteam ist hier, um Sie bei jedem Schritt zu begleiten.",
+    "getInTouch": "In Kontakt treten",
+    "exploreServices": "Dienstleistungen erkunden"
+  },
+  "footer": {
+    "heading": "4sight AI",
+    "text": "Unternehmen ermächtigen, die Kraft der KI zu nutzen",
+    "quickLinks": "Schnelllinks",
+    "products": "Produkte",
+    "legal": "Rechtliches",
+    "terms": "Allgemeine Geschäftsbedingungen",
+    "privacy": "Datenschutzrichtlinie",
+    "copyright": "© 2025 4sight AI. Alle Rechte vorbehalten. | Bangalore, Indien"
+  },
+  "floatingContact": "Kontaktieren Sie uns"
+}

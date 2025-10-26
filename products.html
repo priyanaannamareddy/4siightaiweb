@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore 4sight AI's innovative product portfolio - AI solutions for consulting, healthcare, education, public services, and more.">
+    <meta name="keywords" content="AI Products, AI Envelop, AI Co-pilot, Nutrition AI, News AI, Education AI, UnderWorks">
+    <meta name="author" content="4sight AI">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Our Products - 4sight AI">
+    <meta property="og:description" content="Discover cutting-edge AI products transforming industries worldwide">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://4sightai.com/products">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+
+    <title>Our Products - 4sight AI</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cursor.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">4sight AI</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="min-height: 60vh;">
+        <div class="container">
+            <div style="text-align: center; max-width: 900px; margin: 0 auto;">
+                <h1>Our Products</h1>
+                <p class="subheadline" style="font-size: 1.3rem; color: rgba(255, 255, 255, 0.9); margin-top: var(--spacing-md);">
+                    Transformative AI solutions designed to revolutionize your industry
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="section" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>OUR PRODUCTS</h2>
+                <p>Cutting-edge AI technologies tailored for diverse enterprise needs</p>
+            </div>
+
+            <!-- Product 1: AI Envelop -->
+            <div class="card" id="ai-envelop" style="margin-bottom: var(--spacing-lg);">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-lg); align-items: center;">
+                    <div class="card-image" style="height: 350px;">
+                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&q=80"
+                             alt="AI Envelop - Enterprise AI Infrastructure"
+                             loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3>AI Envelop</h3>
+                        <p>
+                            <strong>AI Envelop</strong> is our flagship enterprise AI infrastructure solution designed to seamlessly wrap around
+                            your existing systems and processes. Think of it as an intelligent layer that enhances every aspect of your operations
+                            without requiring a complete system overhaul.
+                        </p>
+                        <p>
+                            This comprehensive platform enables organizations to integrate AI capabilities across multiple touchpoints—from customer
+                            service and data analysis to workflow automation and predictive analytics. AI Envelop adapts to your unique business
+                            context, learning from your data and processes to provide increasingly sophisticated insights and automation.
+                        </p>
+                        <p><strong>Key Features:</strong></p>
+                        <ul style="padding-left: 1.5rem; color: var(--gray);">
+                            <li>Seamless integration with existing enterprise systems</li>
+                            <li>Modular architecture for customized AI deployment</li>
+                            <li>Real-time data processing and analytics</li>
+                            <li>Scalable infrastructure supporting growth</li>
+                            <li>Advanced security and compliance frameworks</li>
+                        </ul>
+                        <button class="btn btn-primary" style="margin-top: var(--spacing-sm);" onclick="openModal('modal-ai-envelop')">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2: AI Co-pilot (Consulting) -->
+            <div class="card" id="ai-copilot-consulting" style="margin-bottom: var(--spacing-lg);">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-lg); align-items: center;">
+                    <div class="card-content" style="order: 1;">
+                        <h3>AI Co-pilot (Consulting)</h3>
+                        <p>
+                            The <strong>AI Co-pilot for Consulting</strong> is a specialized tool designed to augment the capabilities of consulting
+                            professionals. It serves as an intelligent assistant that helps consultants deliver deeper insights, faster analysis, and
+                            more strategic recommendations to their clients.
+                        </p>
+                        <p>
+                            By analyzing vast amounts of industry data, market trends, and client-specific information, the AI Co-pilot provides
+                            consultants with data-driven insights that would traditionally require weeks of research. It assists in everything from
+                            market analysis and competitive intelligence to financial modeling and strategic planning.
+                        </p>
+                        <p><strong>Key Capabilities:</strong></p>
+                        <ul style="padding-left: 1.5rem; color: var(--gray);">
+                            <li>Automated market research and competitive analysis</li>
+                            <li>Financial modeling and scenario planning</li>
+                            <li>Client presentation generation and visualization</li>
+                            <li>Strategic recommendation synthesis</li>
+                            <li>Real-time industry trend monitoring</li>
+                        </ul>
+                        <button class="btn btn-primary" style="margin-top: var(--spacing-sm);" onclick="openModal('modal-ai-copilot-consulting')">
+                            Learn More
+                        </button>
+                    </div>
+                    <div class="card-image" style="height: 350px; order: 2;">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80"
+                             alt="AI Co-pilot for Consulting"
+                             loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3: Nutrition Co-Pilot -->
+            <div class="card" id="nutrition-copilot" style="margin-bottom: var(--spacing-lg);">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-lg); align-items: center;">
+                    <div class="card-image" style="height: 350px;">
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80"
+                             alt="Nutrition Co-Pilot - Healthcare AI"
+                             loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3>Nutrition Co-Pilot</h3>
+                        <p>
+                            <strong>Nutrition Co-Pilot</strong> is an AI-powered wellness platform that revolutionizes how individuals and healthcare
+                            providers approach nutrition and health management. This intelligent system provides personalized dietary recommendations
+                            based on individual health profiles, goals, and preferences.
+                        </p>
+                        <p>
+                            The platform analyzes nutritional data, health metrics, lifestyle factors, and medical history to create customized meal
+                            plans and nutritional guidance. It adapts recommendations in real-time based on progress tracking and changing health needs,
+                            making it an invaluable tool for healthcare providers, nutritionists, and wellness enterprises.
+                        </p>
+                        <p><strong>Key Features:</strong></p>
+                        <ul style="padding-left: 1.5rem; color: var(--gray);">
+                            <li>Personalized meal planning and nutrition recommendations</li>
+                            <li>Health metrics tracking and analysis</li>
+                            <li>Dietary restriction and allergy management</li>
+                            <li>Integration with health monitoring devices</li>
+                            <li>Educational content on nutrition and wellness</li>
+                        </ul>
+                        <button class="btn btn-primary" style="margin-top: var(--spacing-sm);" onclick="openModal('modal-nutrition-copilot')">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4: News AI -->
+            <div class="card" id="news-ai" style="margin-bottom: var(--spacing-lg);">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-lg); align-items: center;">
+                    <div class="card-content" style="order: 1;">
+                        <h3>News AI</h3>
+                        <p>
+                            <strong>News AI</strong> is an intelligent news aggregation and analysis platform that transforms how organizations and
+                            individuals consume information. It goes beyond simple news feeds to provide curated, analyzed, and contextualized news
+                            insights tailored to your specific interests and needs.
+                        </p>
+                        <p>
+                            The platform uses advanced natural language processing to scan thousands of news sources, identify relevant stories,
+                            detect emerging trends, summarize key points, and even predict potential impacts on your industry or interests. It's
+                            designed for professionals who need to stay informed but don't have time to sift through endless news sources.
+                        </p>
+                        <p><strong>Key Capabilities:</strong></p>
+                        <ul style="padding-left: 1.5rem; color: var(--gray);">
+                            <li>Multi-source news aggregation and curation</li>
+                            <li>AI-powered summarization and key insight extraction</li>
+                            <li>Trend detection and sentiment analysis</li>
+                            <li>Personalized news feeds based on interests</li>
+                            <li>Real-time alerts for breaking news in your domain</li>
+                        </ul>
+                        <button class="btn btn-primary" style="margin-top: var(--spacing-sm);" onclick="openModal('modal-news-ai')">
+                            Learn More
+                        </button>
+                    </div>
+                    <div class="card-image" style="height: 350px; order: 2;">
+                        <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&q=80"
+                             alt="News AI - Intelligent News Platform"
+                             loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 5: AI Co-pilot (Police Department) -->
+            <div class="card" id="ai-copilot-police" style="margin-bottom: var(--spacing-lg);">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-lg); align-items: center;">
+                    <div class="card-image" style="height: 350px;">
+                        <img src="https://images.unsplash.com/photo-1590947132387-155cc02f3212?w=800&q=80"
+                             alt="AI Co-pilot for Police Department"
+                             loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3>AI Co-pilot (Police Department)</h3>
+                        <p>
+                            The <strong>AI Co-pilot for Police Departments</strong> is a sophisticated public safety tool designed to enhance law
+                            enforcement capabilities while ensuring transparency and accountability. This system assists officers in data analysis,
+                            pattern recognition, resource allocation, and administrative tasks.
+                        </p>
+                        <p>
+                            By analyzing crime data, historical patterns, and real-time information, the AI Co-pilot helps departments predict crime
+                            hotspots, optimize patrol routes, manage case information more effectively, and streamline reporting processes. It's built
+                            with strict privacy protections and ethical guidelines to support community safety while respecting civil liberties.
+                        </p>
+                        <p><strong>Key Features:</strong></p>
+                        <ul style="padding-left: 1.5rem; color: var(--gray);">
+                            <li>Predictive analytics for resource allocation</li>
+                            <li>Case management and investigation support</li>
+                            <li>Automated report generation and documentation</li>
+                            <li>Pattern recognition in crime data</li>
+                            <li>Integration with existing law enforcement systems</li>
+                        </ul>
+                        <button class="btn btn-primary" style="margin-top: var(--spacing-sm);" onclick="openModal('modal-ai-copilot-police')">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 6: Personal Finance Co-pilot (Pocket FM) -->
+            <div class="card" id="personal-finance-copilot" style="margin-bottom: var(--spacing-lg);">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-lg); align-items: center;">
+                    <div class="card-content" style="order: 1;">
+                        <h3>Personal Finance Co-pilot (Pocket FM)</h3>
+                        <p>
+                            The <strong>Personal Finance Co-pilot</strong> is an innovative AI-powered financial advisor designed specifically for
+                            Pocket FM's user base. This intelligent assistant helps users make informed financial decisions, manage budgets, track
+                            expenses, and plan for their financial future—all through an intuitive audio-first interface.
+                        </p>
+                        <p>
+                            Leveraging Pocket FM's audio platform, the Finance Co-pilot provides personalized financial advice, budget alerts, savings
+                            recommendations, and investment guidance through engaging audio content. It analyzes spending patterns, identifies savings
+                            opportunities, and delivers insights in an accessible, conversational format that fits seamlessly into users' daily routines.
+                        </p>
+                        <p><strong>Key Features:</strong></p>
+                        <ul style="padding-left: 1.5rem; color: var(--gray);">
+                            <li>Audio-first financial guidance and advice</li>
+                            <li>Automated expense tracking and categorization</li>
+                            <li>Personalized budget creation and monitoring</li>
+                            <li>Savings goal setting and progress tracking</li>
+                            <li>Investment recommendations based on risk profile</li>
+                        </ul>
+                        <button class="btn btn-primary" style="margin-top: var(--spacing-sm);" onclick="openModal('modal-personal-finance-copilot')">
+                            Learn More
+                        </button>
+                    </div>
+                    <div class="card-image" style="height: 350px; order: 2;">
+                        <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&q=80"
+                             alt="Personal Finance Co-pilot"
+                             loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 7: UnderWorks -->
+            <div class="card" id="underworks" style="margin-bottom: var(--spacing-lg);">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-lg); align-items: center;">
+                    <div class="card-image" style="height: 350px;">
+                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&q=80"
+                             alt="UnderWorks - Education AI Suite"
+                             loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3>UnderWorks</h3>
+                        <p>
+                            <strong>UnderWorks</strong> is a comprehensive AI-powered educational platform that brings together three specialized
+                            co-pilots designed to transform the academic experience: Study Buddy, Lab Technician Co-pilot, and Campus Co-pilot.
+                            Together, these tools create an intelligent ecosystem that supports students, educators, and administrators.
+                        </p>
+                        <p>
+                            <strong>Study Buddy</strong> provides personalized learning assistance, helping students understand complex concepts,
+                            prepare for exams, and develop effective study strategies. <strong>Lab Technician Co-pilot</strong> assists in laboratory
+                            management, experiment planning, safety compliance, and data analysis. <strong>Campus Co-pilot</strong> streamlines
+                            administrative processes, campus navigation, event management, and student services.
+                        </p>
+                        <p><strong>Key Components:</strong></p>
+                        <ul style="padding-left: 1.5rem; color: var(--gray);">
+                            <li><strong>Study Buddy:</strong> Personalized tutoring, exam prep, and learning path optimization</li>
+                            <li><strong>Lab Technician Co-pilot:</strong> Experiment planning, safety protocols, equipment management</li>
+                            <li><strong>Campus Co-pilot:</strong> Administrative automation, student services, campus information</li>
+                            <li>Integrated academic performance analytics</li>
+                            <li>Seamless communication across all educational stakeholders</li>
+                        </ul>
+                        <button class="btn btn-primary" style="margin-top: var(--spacing-sm);" onclick="openModal('modal-underworks')">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section section-dark">
+        <div class="container">
+            <div style="text-align: center; padding: var(--spacing-lg) 0;">
+                <h2 class="text-gradient" style="font-size: 2.5rem; margin-bottom: var(--spacing-md);">
+                    Interested in Our Products?
+                </h2>
+                <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto var(--spacing-md); color: rgba(255, 255, 255, 0.9);">
+                    Let's discuss how our AI solutions can transform your organization. Contact us for a personalized demo.
+                </p>
+                <div class="cta-buttons" style="justify-content: center;">
+                    <a href="contact.html" class="btn btn-primary">Request Demo</a>
+                    <a href="services.html" class="btn btn-outline">Explore Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals for Detailed Product Information -->
+
+    <!-- Modal: AI Envelop -->
+    <div class="modal" id="modal-ai-envelop">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('modal-ai-envelop')">&times;</button>
+            <h2>AI Envelop</h2>
+            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&q=80"
+                 alt="AI Envelop Detailed"
+                 style="width: 100%; border-radius: var(--border-radius); margin: var(--spacing-md) 0;"
+                 loading="lazy">
+            <h3>Comprehensive Enterprise AI Infrastructure</h3>
+            <p>
+                AI Envelop represents the future of enterprise AI integration—a modular, scalable platform that wraps around your existing
+                systems to infuse intelligence at every level of your organization.
+            </p>
+
+            <h4>Key Features of AI Envelop</h4>
+
+            <p><strong>Intuitive User Interaction:</strong> By incorporating AI-driven interfaces such as chat and voice commands, AI Envelop makes software applications more accessible and user-friendly, especially for those without specialized knowledge. This natural interaction paradigm removes barriers to technology adoption and enables users of all skill levels to leverage sophisticated AI capabilities.</p>
+
+            <p><strong>Automated Data Processing:</strong> The service includes features like automatic data entry and analysis, reducing manual effort and increasing accuracy. AI Envelop intelligently processes large volumes of data, extracting insights and automating workflows that previously required significant human intervention.</p>
+
+            <p><strong>Customized AI Solutions:</strong> AI Envelop is not a one-size-fits-all solution. It is tailored to fit the unique needs and functionalities of each software application, ensuring optimal integration and performance. Our team works closely with you to understand your specific requirements and craft AI solutions that align perfectly with your business processes.</p>
+
+            <p><strong>Scalability and Adaptability:</strong> As the software evolves, so does the AI wrapper, ensuring that the application remains at the forefront of technological advancements. AI Envelop is designed to grow with your business, adapting to increased workloads and new use cases without requiring complete system overhauls.</p>
+
+            <h4>Why AI Envelop is Essential for Software Products</h4>
+            <ul style="padding-left: 1.5rem; color: var(--gray); margin-bottom: var(--spacing-md);">
+                <li><strong>Enhanced User Experience:</strong> AI Envelop makes software more intuitive and easier to use, broadening its appeal and accessibility. By reducing complexity and providing intelligent assistance, it transforms how users interact with technology.</li>
+                <li><strong>Increased Efficiency:</strong> Automating routine tasks and data processing reduces time and resource expenditure by up to 50%. This allows your team to focus on high-value activities that require human creativity and judgment.</li>
+                <li><strong>Competitive Edge:</strong> In a market where user experience is key, AI Envelop provides a significant advantage by modernizing and enhancing software capabilities. Organizations using AI Envelop report improved customer satisfaction and higher retention rates.</li>
+                <li><strong>Future-Readiness:</strong> As AI continues to shape the technological landscape, having an AI wrapper ensures that software remains relevant and cutting-edge. AI Envelop positions your organization to quickly adopt new AI innovations as they emerge.</li>
+            </ul>
+
+            <h4>Technical Architecture</h4>
+            <ul style="padding-left: 1.5rem; color: var(--gray); margin-bottom: var(--spacing-md);">
+                <li>Microservices-based architecture for flexible deployment</li>
+                <li>API-first design enabling seamless third-party integrations</li>
+                <li>Multi-cloud support (AWS, Azure, Google Cloud)</li>
+                <li>Real-time data streaming and processing capabilities</li>
+                <li>Advanced encryption and security protocols</li>
+            </ul>
+
+            <h4>Use Cases</h4>
+            <ul style="padding-left: 1.5rem; color: var(--gray); margin-bottom: var(--spacing-md);">
+                <li>Intelligent customer service automation</li>
+                <li>Predictive maintenance and asset optimization</li>
+                <li>Supply chain intelligence and optimization</li>
+                <li>Automated document processing and analysis</li>
+                <li>Real-time business intelligence and reporting</li>
+            </ul>
+
+            <h4>Conclusion</h4>
+            <p>
+                AI Envelop by 4sight AI is more than just a service; it's a necessary step towards the future of software development. It represents a commitment to continuous innovation, ensuring that software applications not only meet current demands but are also prepared for future advancements in AI technology.
+            </p>
+
+            <a href="contact.html" class="btn btn-primary" style="margin-top: var(--spacing-md);">Request Detailed Information</a>
+        </div>
+    </div>
+
+    <!-- Modal: AI Co-pilot Consulting -->
+    <div class="modal" id="modal-ai-copilot-consulting">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('modal-ai-copilot-consulting')">&times;</button>
+            <h2>AI Co-pilot with Specialized Modes for Consulting Companies</h2>
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80"
+                 alt="AI Co-pilot Consulting Detailed"
+                 style="width: 100%; border-radius: var(--border-radius); margin: var(--spacing-md) 0;"
+                 loading="lazy">
+            <h3>Intelligent Consulting Assistant</h3>
+            <p>
+                Transform your consulting practice with an AI partner that amplifies your analytical capabilities, accelerates research,
+                and enhances client deliverables with data-driven insights.
+            </p>
+
+            <h4>Key Features</h4>
+            <p><strong>Candidate Co-pilot:</strong> Tailors the job search process to match candidates with opportunities that align with their skills, preferences, and career goals, ensuring a higher success rate in placements.</p>
+
+            <p><strong>Hiring Manager Co-pilot:</strong> Automates and enhances the recruitment workflow, from identifying suitable candidates to scheduling interviews and managing paperwork, freeing up valuable time for strategic decision-making.</p>
+
+            <p><strong>Operations Co-pilot:</strong> Simplifies administrative tasks such as contract management, timesheet processing, and invoice generation, significantly reducing operational overhead.</p>
+
+            <h4>Efficiency Gains and Savings</h4>
+            <p>Our AI Co-pilot system not only accelerates the recruitment cycle but also enhances the quality of matches between candidates and job openings. By automating routine tasks, it allows your team to focus on what they do best—building relationships and driving growth. The system learns from each interaction, continuously improving its recommendations and streamlining processes. Key benefits include:</p>
+
+            <ul style="padding-left: 1.5rem; color: var(--gray); margin-bottom: var(--spacing-md);">
+                <li><strong>Reduced Time-to-Hire:</strong> Accelerate your recruitment process by up to 30%, getting the right talent in the right roles faster than ever. Our AI algorithms quickly identify top candidates from large applicant pools, reducing screening time dramatically.</li>
+                <li><strong>Operational Cost Reduction:</strong> Cut operational tasks by 50%, translating into substantial cost savings and allowing your team to allocate resources more effectively. Automation of routine administrative work frees up consultants to focus on high-value client relationships.</li>
+                <li><strong>Increased Placement Accuracy:</strong> With advanced AI algorithms, improve the accuracy of your candidate-job matching process by up to 40%, enhancing satisfaction for both clients and candidates. Better matches lead to longer tenure and reduced turnover costs.</li>
+                <li><strong>Strategic Insights:</strong> Leverage the power of AI-driven analytics to gain deep insights into hiring trends, operational efficiencies, skill gaps in the market, and areas for improvement, informing your strategy and decision-making with data-backed recommendations.</li>
+            </ul>
+
+            <h4>Why Choose AI Co-pilot?</h4>
+            <ul style="padding-left: 1.5rem; color: var(--gray); margin-bottom: var(--spacing-md);">
+                <li><strong>Competitive Advantage:</strong> Stay ahead of the curve by adopting AI technologies that streamline your operations and enhance your service offerings. Early adopters report winning more clients due to faster, more accurate placements.</li>
+                <li><strong>Scalability:</strong> Whether you're a small boutique firm or a large multinational, our AI Co-pilot scales with your business, adapting to your evolving needs. Handle 10x more candidates without proportionally increasing your team size.</li>
+                <li><strong>Customization:</strong> Tailored to fit the unique challenges and opportunities of the consulting industry, ensuring that the solution aligns with your specific business objectives. We configure the AI to match your company's unique evaluation criteria and processes.</li>
+                <li><strong>Seamless Integration:</strong> Works with your existing ATS and CRM systems, requiring minimal disruption to current workflows while dramatically enhancing their capabilities.</li>
+            </ul>
+
+            <h4>Real-World Impact</h4>
+            <p>Consulting firms using our AI Co-pilot report transformative results: consultants spending 60% more time on relationship-building activities, 35% increase in successful placements, and significant improvements in client and candidate satisfaction scores. The system pays for itself within the first quarter for most organizations.</p>
+
+            <a href="contact.html" class="btn btn-primary" style="margin-top: var(--spacing-md);">Schedule a Demo</a>
+        </div>
+    </div>
+
+    <!-- Modal: Nutrition Co-Pilot -->
+    <div class="modal" id="modal-nutrition-copilot">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('modal-nutrition-copilot')">&times;</button>
+            <h2>Nutrition Co-Pilot</h2>
+            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80"
+                 alt="Nutrition Co-Pilot Detailed"
+                 style="width: 100%; border-radius: var(--border-radius); margin: var(--spacing-md) 0;"
+                 loading="lazy">
+            <h3>AI-Powered Personalized Nutrition Platform</h3>
+            <p>
+                Nutrition Co-Pilot combines cutting-edge nutritional science with AI to deliver personalized dietary guidance that
+                adapts to individual health profiles and goals.
+            </p>
+
+            <h4>AI Mode Capabilities</h4>
+
+            <p><strong>Wellness Navigator (For Wellness Participants):</strong></p>
+            <ul style="padding-left: 1.5rem; color: var(--gray); margin-bottom: var(--spacing-md);">
+                <li><strong>Personal Health Assistant:</strong> Engages directly with Wellness Participants, offering tailored health interactions and supplement guidance.</li>
+                <li><strong>Health Tracking and Reminders:</strong> Monitors supplement intake, sends reminders, and tracks health progress for each participant.</li>
+                <li><strong>Feedback Analysis:</strong> Gathers and analyzes feedback on supplement effectiveness, fine-tuning recommendations to suit evolving health needs.</li>
+            </ul>
+
+            <p><strong>NutriAdvisor (For Nutritionists):</strong></p>
+            <ul style="padding-left: 1.5rem; color: var(--gray); margin-bottom: var(--spacing-md);">
+                <li><strong>Professional Support Tool:</strong> Provides a comprehensive dashboard for nutritionists, summarizing Wellness Participants' health data for effective management.</li>
+                <li><strong>AI-Assisted Recommendations:</strong> Aids nutritionists in refining supplement suggestions and health advice, backed by AI-driven insights.</li>
+                <li><strong>Direct Communication Facilitator:</strong> Enables seamless communication between nutritionists and their Wellness Participants.</li>
+            </ul>
+
+            <p><strong>Health Intellect (Knowledge Co-pilot Mode):</strong></p>
+            <ul style="padding-left: 1.5rem; color: var(--gray); margin-bottom: var(--spacing-md);">
+                <li><strong>Continuous Knowledge Update:</strong> Stays updated with the latest research in health, nutrition, and supplements.</li>
+                <li><strong>Contextual Learning:</strong> Integrates diverse health determinants like age, location, lifestyle, and specific conditions.</li>
+                <li><strong>Adaptive Learning Algorithm:</strong> Continuously evolves its recommendations based on the latest health and nutrition trends.</li>
+            </ul>
+
+            <h4>Transforming Personalized Nutrition</h4>
+            <p>This AI-powered platform is a significant advancement in the supplemental nutrition industry. Each AI mode is specifically designed to provide targeted benefits:</p>
+
+            <ul style="padding-left: 1.5rem; color: var(--gray); margin-bottom: var(--spacing-md);">
+                <li><strong>For Wellness Participants:</strong> The Wellness Navigator offers a personalized and empowering health journey.</li>
+                <li><strong>For Nutritionists:</strong> The NutriAdvisor enhances the ability to deliver personalized care, leveraging AI insights.</li>
+                <li><strong>For Knowledge Integration:</strong> The Health Intellect ensures that the platform remains at the forefront of nutritional science.</li>
+            </ul>
+
+            <p>Together, these AI modes create a comprehensive ecosystem that addresses individual health needs and empowers both Wellness Participants and Nutritionists with the latest tools and knowledge. This platform exemplifies the transformative potential of AI in healthcare and wellness, offering unparalleled personalization, efficiency, and knowledge integration.</p>
+
+            <h4>Real-World Applications</h4>
+            <ul style="padding-left: 1.5rem; color: var(--gray); margin-bottom: var(--spacing-md);">
+                <li><strong>Corporate Wellness Programs:</strong> Organizations use Nutrition Co-Pilot to support employee health initiatives, reducing healthcare costs and improving productivity.</li>
+                <li><strong>Healthcare Providers:</strong> Nutritionists and dietitians leverage the platform to manage larger client bases while delivering more personalized care.</li>
+                <li><strong>Supplement Companies:</strong> Brands use the platform to provide value-added services to customers, improving product adherence and customer loyalty.</li>
+                <li><strong>Fitness Centers:</strong> Gyms integrate Nutrition Co-Pilot with training programs to provide holistic health solutions to members.</li>
+            </ul>
+
+            <h4>Platform Benefits</h4>
+            <ul style="padding-left: 1.5rem; color: var(--gray); margin-bottom: var(--spacing-md);">
+                <li>Personalized nutrition recommendations based on individual health profiles</li>
+                <li>Real-time tracking and adjustment of dietary plans</li>
+                <li>Evidence-based supplement guidance aligned with health goals</li>
+                <li>Seamless communication between participants and nutrition professionals</li>
+                <li>Continuous learning from latest nutritional research</li>
+                <li>Integration with wearable devices and health monitoring systems</li>
+            </ul>
+
+            <a href="contact.html" class="btn btn-primary" style="margin-top: var(--spacing-md);">Learn More</a>
+        </div>
+    </div>
+
+    <!-- Modal: News AI -->
+    <div class="modal" id="modal-news-ai">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('modal-news-ai')">&times;</button>
+            <h2>News AI</h2>
+            <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&q=80"
+                 alt="News AI Detailed"
+                 style="width: 100%; border-radius: var(--border-radius); margin: var(--spacing-md) 0;"
+                 loading="lazy">
+            <h3>Intelligent News Curation & Analysis</h3>
+            <p>
+                Stay ahead of the curve with News AI—an intelligent platform that doesn't just aggregate news but understands it,
+                analyzes it, and delivers insights that matter to you.
+            </p>
+            <h4>Advanced Features</h4>
+            <ul style="padding-left: 1.5rem; color: var(--gray); margin-bottom: var(--spacing-md);">
+                <li>Multi-language news source monitoring</li>
+                <li>AI-powered summarization preserving key context</li>
+                <li>Sentiment analysis and trend detection</li>
+                <li>Impact assessment for your industry or interests</li>
+                <li>Customizable alert thresholds and delivery preferences</li>
+            </ul>
+            <h4>Perfect For</h4>
+            <ul style="padding-left: 1.5rem; color: var(--gray); margin-bottom: var(--spacing-md);">
+                <li>Executives needing strategic market intelligence</li>
+                <li>Investors tracking market-moving news</li>
+                <li>Researchers monitoring academic and industry developments</li>
+                <li>Communications teams managing reputation and PR</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary" style="margin-top: var(--spacing-md);">Start Your Free Trial</a>
+        </div>
+    </div>
+
+    <!-- Modal: AI Co-pilot Police -->
+    <div class="modal" id="modal-ai-copilot-police">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('modal-ai-copilot-police')">&times;</button>
+            <h2>AI Co-pilot (Police Department)</h2>
+            <img src="https://images.unsplash.com/photo-1590947132387-155cc02f3212?w=800&q=80"
+                 alt="Police AI Co-pilot Detailed"
+                 style="width: 100%; border-radius: var(--border-radius); margin: var(--spacing-md) 0;"
+                 loading="lazy">
+            <h3>Public Safety Intelligence Platform</h3>
+            <p>
+                The AI Co-pilot for Police Departments enhances law enforcement capabilities while maintaining the highest standards
+                of ethical AI use, transparency, and accountability.
+            </p>
+
+            <h4>Key Functionalities</h4>
+
+            <p><strong>IPC Section Analysis:</strong> The AI Co-pilot analyzes complaints and suggests relevant IPC sections, ensuring accurate categorization and processing. This automated analysis reduces the time officers spend on legal research and improves the consistency of case classifications.</p>
+
+            <p><strong>Case Diary Assistance:</strong> It aids in building a detailed case diary by organizing information about accused individuals, defendants, witnesses, and locations. The system automatically structures case information, making it easier to track case progression and maintain comprehensive records.</p>
+
+            <p><strong>Deposition Question Generation:</strong> The AI Co-pilot generates deposition questions, aiding officers in conducting comprehensive interviews. Based on case details and legal requirements, it suggests relevant questions to ensure thorough information gathering during witness and suspect interviews.</p>
+
+            <p><strong>Compilation and Analysis of Depositions:</strong> It compiles deposition responses, highlighting inconsistencies for further investigation. The AI analyzes multiple depositions to identify contradictions, patterns, and gaps in statements, helping officers focus their investigative efforts more effectively.</p>
+
+            <p><strong>Investigative Support:</strong> The AI Co-pilot continuously supports investigative officers with information and analytical insights. It provides real-time access to relevant case precedents, procedural guidelines, and analytical tools throughout the investigation process.</p>
+
+            <p><strong>Preparing Legal Briefs:</strong> A crucial feature is the AI Co-pilot's ability to assist in preparing legal briefs for the investigative officer. It compiles case information, evidence summaries, and legal references into structured formats that meet court requirements, significantly reducing the time spent on documentation and improving the quality of case presentations.</p>
+
+            <h4>Impact on Law Enforcement</h4>
+            <p>The AI Co-pilot for Police Department transforms traditional investigative processes by combining artificial intelligence with law enforcement expertise. It enhances officer productivity, improves case quality, and ensures procedural compliance while allowing officers to focus on critical investigative tasks that require human judgment and intuition.</p>
+
+            <h4>Ethical Framework</h4>
+            <ul style="padding-left: 1.5rem; color: var(--gray); margin-bottom: var(--spacing-md);">
+                <li>Strict privacy protections and data governance</li>
+                <li>Bias detection and mitigation mechanisms</li>
+                <li>Transparent decision-making processes</li>
+                <li>Human-in-the-loop for critical decisions</li>
+                <li>Regular audits and compliance reporting</li>
+            </ul>
+
+            <h4>Impact and Benefits</h4>
+            <ul style="padding-left: 1.5rem; color: var(--gray); margin-bottom: var(--spacing-md);">
+                <li><strong>Enhanced Legal Accuracy:</strong> Suggesting appropriate IPC sections reduces errors in legal categorization and ensures consistent application of laws across all cases.</li>
+                <li><strong>Efficient Case Handling:</strong> Automating case diary management and deposition analysis speeds up investigations by 40-50%, allowing officers to handle more cases effectively.</li>
+                <li><strong>Improved Investigative Quality:</strong> AI-generated questions and analysis lead to more thorough investigations, higher quality evidence gathering, and stronger cases for prosecution.</li>
+                <li><strong>Resource Optimization:</strong> The AI Co-pilot allows officers to focus on critical law enforcement aspects that require human judgment and field presence, rather than administrative paperwork.</li>
+                <li><strong>Streamlined Legal Documentation:</strong> Preparing legal briefs for the judiciary simplifies the documentation process, reducing preparation time by up to 60% while improving consistency and quality.</li>
+                <li><strong>Better Case Outcomes:</strong> Comprehensive documentation and analysis contribute to higher conviction rates and more successful prosecutions.</li>
+            </ul>
+
+            <h4>Operational Benefits</h4>
+            <ul style="padding-left: 1.5rem; color: var(--gray); margin-bottom: var(--spacing-md);">
+                <li>30-40% reduction in administrative workload for investigative officers</li>
+                <li>Improved resource allocation and patrol efficiency through data-driven insights</li>
+                <li>Faster case resolution through intelligent data correlation and pattern recognition</li>
+                <li>Enhanced community safety through predictive analytics and proactive policing</li>
+                <li>Reduced training time for new officers with AI-guided procedures</li>
+                <li>Improved inter-departmental coordination and information sharing</li>
+            </ul>
+
+            <h4>Conclusion</h4>
+            <p>This collaboration with the Police Department showcases 4sight AI's dedication to using AI for societal and legal improvements. The AI Co-pilot not only enhances law enforcement processes but also plays a crucial role in upholding justice standards. It exemplifies the transformative impact of AI in public safety and legal administration, helping law enforcement agencies serve their communities more effectively while maintaining the highest ethical standards.</p>
+
+            <a href="contact.html" class="btn btn-primary" style="margin-top: var(--spacing-md);">Request Consultation</a>
+        </div>
+    </div>
+
+    <!-- Modal: Personal Finance Co-pilot -->
+    <div class="modal" id="modal-personal-finance-copilot">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('modal-personal-finance-copilot')">&times;</button>
+            <h2>Personal Finance Co-pilot (Pocket FM)</h2>
+            <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&q=80"
+                 alt="Personal Finance Co-pilot Detailed"
+                 style="width: 100%; border-radius: var(--border-radius); margin: var(--spacing-md) 0;"
+                 loading="lazy">
+            <h3>Audio-First Financial Intelligence</h3>
+            <p>
+                A revolutionary approach to personal finance management that leverages Pocket FM's audio platform to deliver
+                personalized financial guidance in an engaging, accessible format.
+            </p>
+            <h4>Unique Audio-First Approach</h4>
+            <ul style="padding-left: 1.5rem; color: var(--gray); margin-bottom: var(--spacing-md);">
+                <li>Conversational financial advice delivered through audio</li>
+                <li>Daily financial briefings during commute or workout</li>
+                <li>Voice-activated expense tracking and queries</li>
+                <li>Engaging audio content on financial literacy topics</li>
+                <li>Personalized podcast-style financial coaching</li>
+            </ul>
+            <h4>Financial Empowerment</h4>
+            <p>
+                Users report increased financial confidence, better savings habits, and improved money management skills after using
+                the Personal Finance Co-pilot. The audio-first approach makes financial education accessible and engaging.
+            </p>
+            <a href="contact.html" class="btn btn-primary" style="margin-top: var(--spacing-md);">Get Started</a>
+        </div>
+    </div>
+
+    <!-- Modal: UnderWorks -->
+    <div class="modal" id="modal-underworks">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('modal-underworks')">&times;</button>
+            <h2>UnderWorks</h2>
+            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&q=80"
+                 alt="UnderWorks Detailed"
+                 style="width: 100%; border-radius: var(--border-radius); margin: var(--spacing-md) 0;"
+                 loading="lazy">
+            <h3>Comprehensive Educational AI Ecosystem</h3>
+            <p>
+                UnderWorks brings together three specialized AI co-pilots to create a complete intelligent ecosystem for modern
+                educational institutions.
+            </p>
+            <h4>Study Buddy</h4>
+            <ul style="padding-left: 1.5rem; color: var(--gray); margin-bottom: var(--spacing-md);">
+                <li>Personalized learning paths based on learning style and pace</li>
+                <li>24/7 homework and concept explanation assistance</li>
+                <li>Exam preparation with practice tests and weak area identification</li>
+                <li>Study schedule optimization and time management</li>
+                <li>Collaborative learning tools for group study sessions</li>
+            </ul>
+            <h4>Lab Technician Co-pilot</h4>
+            <ul style="padding-left: 1.5rem; color: var(--gray); margin-bottom: var(--spacing-md);">
+                <li>Experiment design and protocol generation</li>
+                <li>Safety compliance checking and risk assessment</li>
+                <li>Equipment scheduling and maintenance tracking</li>
+                <li>Automated data collection and analysis</li>
+                <li>Lab inventory management and ordering</li>
+            </ul>
+            <h4>Campus Co-pilot</h4>
+            <ul style="padding-left: 1.5rem; color: var(--gray); margin-bottom: var(--spacing-md);">
+                <li>Intelligent campus navigation and building information</li>
+                <li>Event management and student activity coordination</li>
+                <li>Administrative task automation (enrollment, scheduling, etc.)</li>
+                <li>Student services chatbot for common queries</li>
+                <li>Campus safety and emergency notification system</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary" style="margin-top: var(--spacing-md);">Explore UnderWorks</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>4sight AI</h3>
+                    <p>Empowering Enterprises to harness the power of AI</p>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/company/4sight-ai" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a href="https://twitter.com/4sightai" target="_blank" rel="noopener" aria-label="Twitter">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="https://github.com/4sightai" target="_blank" rel="noopener" aria-label="GitHub">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="#ai-envelop">AI Envelop</a></li>
+                        <li><a href="#ai-copilot-consulting">AI Co-pilot (Consulting)</a></li>
+                        <li><a href="#nutrition-copilot">Nutrition Co-Pilot</a></li>
+                        <li><a href="#news-ai">News AI</a></li>
+                        <li><a href="#underworks">UnderWorks</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="terms.html#privacy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 4sight AI. All rights reserved. | Bangalore, India</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Contact Button -->
+    <a href="contact.html" class="floating-contact" aria-label="Contact Us">
+        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+        </svg>
+    </a>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M7 14l5-5 5 5z"/>
+        </svg>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/cursor.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/animate-cards.js"></script>
+
+    <!-- Responsive CSS for Products Page -->
+    <style>
+        @media (max-width: 768px) {
+            .card > div[style*="grid-template-columns: 1fr 1fr"] {
+                grid-template-columns: 1fr !important;
+            }
+            .card > div > div[style*="order: 1"],
+            .card > div > div[style*="order: 2"] {
+                order: 0 !important;
+            }
+            .card-image {
+                height: 250px !important;
+            }
+        }
+    </style>
+</body>
+</html>
