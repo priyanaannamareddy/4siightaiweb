@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="4sight AI Gallery - Explore our AI solutions and success stories through visual showcases">
+    <meta name="keywords" content="4sight AI Gallery, AI Projects, Enterprise AI Solutions, Visual Showcase">
+    <meta name="author" content="4sight AI">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="4sight AI Gallery - Visual Showcase">
+    <meta property="og:description" content="Explore our AI solutions and success stories through visual showcases">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://4sightai.com/gallery">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+
+    <title>Gallery - 4sight AI</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cursor.css">
+    <link rel="stylesheet" href="css/slides.css">
+
+    <!-- Gallery specific styles -->
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: var(--spacing-md);
+            padding: var(--spacing-md);
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            background: var(--white);
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+            cursor: pointer;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--box-shadow-hover);
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover .gallery-image {
+            transform: scale(1.05);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(10, 26, 47, 0.9), transparent);
+            padding: var(--spacing-md);
+            color: var(--white);
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+
+        .gallery-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .gallery-description {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .gallery-filter {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-lg);
+            flex-wrap: wrap;
+            padding: 0 var(--spacing-md);
+        }
+
+        .filter-btn {
+            padding: var(--spacing-xs) var(--spacing-sm);
+            border: 2px solid var(--secondary-cyan);
+            border-radius: var(--border-radius-small);
+            background: transparent;
+            color: var(--secondary-cyan);
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 500;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--secondary-cyan);
+            color: var(--primary-navy);
+        }
+
+        /* Lightbox styles */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+            padding: var(--spacing-lg);
+        }
+
+        .lightbox.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 90vh;
+            position: relative;
+        }
+
+        .lightbox-image {
+            max-width: 100%;
+            max-height: 90vh;
+            object-fit: contain;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            color: var(--white);
+            background: none;
+            border: none;
+            font-size: 2rem;
+            cursor: pointer;
+            padding: var(--spacing-xs);
+        }
+
+        .lightbox-caption {
+            position: absolute;
+            bottom: -40px;
+            left: 0;
+            right: 0;
+            color: var(--white);
+            text-align: center;
+            padding: var(--spacing-xs);
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-filter {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .filter-btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">4sight AI</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="min-height: 60vh;">
+        <div class="container">
+            <div style="text-align: center; max-width: 900px; margin: 0 auto;">
+                <h1>Our Gallery</h1>
+                <p class="subheadline" style="font-size: 1.3rem; color: rgba(255, 255, 255, 0.9); margin-top: var(--spacing-md);">
+                    Explore our visual journey through AI innovation and success stories
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section">
+        <div class="container">
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ai-solutions">AI Solutions</button>
+                <button class="filter-btn" data-filter="case-studies">Case Studies</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+                <button class="filter-btn" data-filter="team">Our Team</button>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- AI Solutions -->
+                <div class="gallery-item" data-category="ai-solutions">
+                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995" alt="AI Solution Demo" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">AI-Powered Analytics Dashboard</h3>
+                        <p class="gallery-description">Real-time data visualization and predictive analytics platform</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="ai-solutions">
+                    <img src="https://images.unsplash.com/photo-1676299081847-824ace0dd5c3" alt="Machine Learning Model" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Machine Learning Pipeline</h3>
+                        <p class="gallery-description">Advanced ML models for predictive maintenance</p>
+                    </div>
+                </div>
+
+                <!-- Case Studies -->
+                <div class="gallery-item" data-category="case-studies">
+                    <img src="https://images.unsplash.com/photo-1557426272-fc759fdf7a8d" alt="Success Story" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Healthcare AI Implementation</h3>
+                        <p class="gallery-description">60% improvement in diagnostic accuracy</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="case-studies">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692" alt="Enterprise Solution" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Manufacturing Optimization</h3>
+                        <p class="gallery-description">Reduced downtime by 40% through predictive maintenance</p>
+                    </div>
+                </div>
+
+                <!-- Events -->
+                <div class="gallery-item" data-category="events">
+                    <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87" alt="AI Conference" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">AI Summit 2025</h3>
+                        <p class="gallery-description">Showcasing next-gen AI solutions</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="events">
+                    <img src="https://images.unsplash.com/photo-1558008258-3256797b43f3" alt="Workshop" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">AI Workshop Series</h3>
+                        <p class="gallery-description">Hands-on training with industry experts</p>
+                    </div>
+                </div>
+
+                <!-- Team -->
+                <div class="gallery-item" data-category="team">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c" alt="Team Meeting" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Innovation Team</h3>
+                        <p class="gallery-description">Collaborative problem-solving in action</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="team">
+                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4" alt="Research Team" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <h3 class="gallery-title">Research & Development</h3>
+                        <p class="gallery-description">Pushing the boundaries of AI technology</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightboxClose">&times;</button>
+            <img src="" alt="" class="lightbox-image" id="lightboxImage">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>4sight AI</h3>
+                    <p>Empowering Enterprises with AI</p>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/company/4sight-ai" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a href="https://twitter.com/4sightai" target="_blank" rel="noopener" aria-label="Twitter">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="https://github.com/4sightai" target="_blank" rel="noopener" aria-label="GitHub">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="products.html#ai-envelop">AI Envelop</a></li>
+                        <li><a href="products.html#ai-copilot-consulting">AI Co-pilot (Consulting)</a></li>
+                        <li><a href="products.html#nutrition-copilot">Nutrition Co-Pilot</a></li>
+                        <li><a href="products.html#news-ai">News AI</a></li>
+                        <li><a href="products.html#underworks">UnderWorks</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="terms.html#privacy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 4sight AI. All rights reserved. | Bangalore, India</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/slides.js"></script>
+    <script>
+        // Gallery filtering
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Update active button
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                // Filter gallery items
+                const filter = button.dataset.filter;
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.dataset.category === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Lightbox functionality
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImage = document.getElementById('lightboxImage');
+        const lightboxCaption = document.getElementById('lightboxCaption');
+        const lightboxClose = document.getElementById('lightboxClose');
+
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const img = item.querySelector('.gallery-image');
+                const title = item.querySelector('.gallery-title').textContent;
+                const description = item.querySelector('.gallery-description').textContent;
+
+                lightboxImage.src = img.src;
+                lightboxImage.alt = img.alt;
+                lightboxCaption.textContent = `${title} - ${description}`;
+                lightbox.classList.add('active');
+            });
+        });
+
+        lightboxClose.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
